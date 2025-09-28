@@ -1,0 +1,366 @@
+Date,Equipment Name,Registration No.,Fleet No.,Fuel Issued  (LTS),Start hour (H),End hour (H),Engine work hour (EH-SH),Odometer Start (KM),Odometer End (KM),Distance Covered (KM),Fuel Efficiency - (Km/Ltrs),Fuel consumed ,Driver/Operator Name,Comment/ Remarks
+7/16/2025,Tipper Truck,GT 8864-25,TT 13,228,178,189.5,11.5,4977,5353,376,1.649,228,Mohammed Tanko,Hauling Materials to Ahafo North  (Newmont)
+7/16/2025,Tipper Truck,GT 7721-25,TT 09,193,488,499.4,11.4,10070,10450,380,1.969,193,Gafaru Achimsa,Hauling Materials to Ahafo North  (Newmont)
+7/16/2025,Tipper Truck,GT 8848-25,TT 12,334,192.2,207.6,15.4,5759,6321,562,1.683,334,Mohammed Amin Alidu,Hauling Materials to Ahafo North  (Newmont)
+7/16/2025,Tipper Truck,GT 7846-25,TT 06,238,515.7,529.2,13.5,15723,16100,377,1.584,238,Abraham Arthur,Hauling Materials to Ahafo North  (Newmont)
+7/16/2025,Tipper Truck,GT 7855-25,TT 04,231,487.5,501.7,14.2,15202,15581,379,1.641,231,Timothy Abelpora,Hauling Materials to Ahafo North  (Newmont)
+7/16/2025,Tipper Truck,GT 7720-25,TT 10,279,486.1,503.5,17.4,14746,15317,571,2.047,279,Fuesni Adams,Hauling Materials to Ahafo North  (Newmont)
+7/16/2025,Tipper Truck,GT 7769-25,TT 11,199,498.9,511.9,13,14578,14960,382,1.92,199,Paul Osei,Hauling Materials to Ahafo North  (Newmont)
+7/16/2025,Tipper Truck,GT 7727-25,TT 08,201,490.1,502,11.9,14952,15338,386,1.92,201,Alhassan Samed,Hauling Materials to Ahafo North  (Newmont)
+7/16/2025,Tipper Truck,GT 7858-25,TT 05,211,486.6,499.4,12.8,15200,15576,376,1.782,211,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+7/16/2025,Toyota Hilux ,GW 4059-20,Unknown,71,0,0,0,1141.7,1799.2,657.5,9.261,71,Durgesh P. Raju,Used by Manager Minta
+7/16/2025,Wheel Loader 966H,GR 9391-24,LD 04,259,10001.6,10001.9,0.3,0,0,0,863.333,259,Adams Seidu,Laydown Works
+7/16/2025,Excavator 330GC ,Unknown,EX 06,428,6584.1,6594.3,10.2,0,0,0,41.961,428,Ibrahim Issaka,Laydown Works
+7/17/2025,Toyota White bus,GN 6692-11,BU 01,79,0,0,0,268667,269151,484,6.127,79,Kwadwo Yeboah,Staff transportation
+7/17/2025,Toyota Yellow Bus,GN 6323-21,BU 02,76,0,0,0,218583,219239,656,8.632,76,Sulemena Haruna ,Staff transportation
+7/17/2025,Tipper Truck,GT 8864-25,TT 13,350,189.5,205.9,16.4,5353,5952,599,1.711,350,Mohammed Tanko,Hauling Materials to Ahafo North  (Newmont)
+7/17/2025,Tipper Truck,GT 8848-25,TT 12,338,207.6,222.9,15.3,6321,6900,579,1.713,338,Mohammed Amin Alidu,Hauling Materials to Ahafo North  (Newmont)
+7/17/2025,Tipper Truck,GT 7721-25,TT 09,296,499.4,515.2,15.8,10450,11026,576,1.946,296,Gafaru Achimsa,Hauling Materials to Ahafo North  (Newmont)
+7/17/2025,Tipper Truck,GT 7858-25,TT 05,368,499.4,514,14.6,15576,16150,574,1.56,368,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+7/17/2025,Tipper Truck,GT 7855-25,TT 04,361,501.7,517.8,16.1,15581,16156,575,1.593,361,Abdul Razak,Hauling Materials to Ahafo North  (Newmont)
+7/17/2025,Tipper Truck,GT 7769-25,TT 11,309,511.9,529,17.1,14960,15536,576,1.864,309,Paul Osei,Hauling Materials to Ahafo North  (Newmont)
+7/17/2025,Tipper Truck,GT 7727-25,TT 08,312,502,518.6,16.6,15338,15914,576,1.846,312,Alhassan Samed,Hauling Materials to Ahafo North  (Newmont)
+7/17/2025,Tipper Truck,GT 7720-25,TT 10,296,503.5,520.1,16.6,15317,15924,607,2.051,296,Fuesni Adams,Hauling Materials to Ahafo North  (Newmont)
+7/17/2025,Vulcanizer,Unknown,Unknown,4,0,0,0,0,0,0,0,4,Ishamel Mohammed,Laydown Works
+7/17/2025,Tipper Truck,GT 7846-25,TT 06,364,529.2,548.3,19.1,16100,16674,574,1.577,364,Abraham Arthur,Hauling Materials to Ahafo North  (Newmont)
+7/17/2025,Daewoo Truck,GR 6168-24,TR 03,250,0,0,0,671598,671923,325,1.3,250,Yussif Adams,Resettlement Works
+7/18/2025,Green Hiab,GS 2453-21,TR 04,187,0,0,0,110853.4,110990.9,137.5,1.36,187,Kwame Kra,Resettlement Works
+7/18/2025,Toyota White bus,GN 6692-11,BU 01,61,0,0,0,269151,269551,400,6.557,61,Kwadwo Yeboah,Staff transportation
+7/18/2025,Block factory Gen.,Unknown,Unknown,213,0,0,0,0,0,0,0,213,Ebenezer Agyapong,Laydown Works
+7/19/2025,Concrete Mixer,Unknown,Unknown,20,0,0,0,0,0,0,0,20,Samuel Boateng ,Laydown Works
+7/19/2025,Welding Machine,Unknown,WM 01,41,0,0,0,0,0,0,0,41,Prince Essuman,The hour reading is malfunctioning
+7/19/2025,Car Washer 1,Unknown,Unknown,24,0,0,0,0,0,0,0,24,Bismark Kusi,Washing of Various Plant 
+7/19/2025,Tipper Truck,GT 8864-25,TT 13,334,205.9,224.6,18.7,5924,6523,599,1.793,334,Mohammed Tanko,Hauling Materials
+7/19/2025,Tipper Truck,GT 8848-25,TT 12,330,222.9,239.5,16.6,6900,7473,573,1.736,330,Sulemena Kadri,Hauling Materials to Ahafo North  (Newmont)
+7/19/2025,Tipper Truck,GT 7721-25,TT 09,299,515.2,531.4,16.2,11026,11603,577,1.93,299,Gafaru Achimsa,Hauling Materials to Ahafo North  (Newmont)
+7/19/2025,Tipper Truck,GT 7720-25,TT 10,293,520.1,536.4,16.3,15924,16506,582,1.986,293,Ibrahim Abdulai Saaka,Hauling Materials to Ahafo North  (Newmont)
+7/19/2025,Tipper Truck,GT 7727-25,TT 08,292,518.6,534.8,16.2,15914,16490,576,1.973,292,Abubakar Mohammed ,Hauling Materials to Ahafo North  (Newmont)
+7/19/2025,Tipper Truck,GT 7769-25,TT 11,293,528.9,545.8,16.9,15536,16113,577,1.969,293,Alhassan Samed,Hauling Materials to Ahafo North  (Newmont)
+7/19/2025,Tipper Truck,GT 7855-25,TT 04,395,517.8,534.3,16.5,16156,16732,576,1.458,395,Abdul Razak,Hauling Materials to Ahafo North  (Newmont)
+7/19/2025,Tipper Truck,GT 7846-25,TT 06,361,548.3,565,16.7,16674,17250,576,1.596,361,Timothy Abelpora,Hauling Materials to Ahafo North  (Newmont)
+7/19/2025,Tipper Truck,GT 7858-25,TT 05,373,514,530.3,16.3,16150,16726,576,1.544,373,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+7/19/2025,Concrete Mixer,Unknown,Unknown,18,0,0,0,0,0,0,0,18,Alex Frimpong,Resttlement concrete works
+7/19/2025,Tower light ,4NX3855,TL 03,60,0,0,0,0,0,0,0,60,Philip Osei,Laydown Works
+7/19/2025,Excavator 330GC,Unknown,EX 05,310,4335.5,4339.3,3.8,0,0,0,81.579,310,Alley Ibrahim,Laydown Works
+7/19/2025,Genset 1000KVA,Unknown,Unknown,29,0,0,0,0,0,0,0,29,Joshua Mawugbe,Servicing Works
+7/20/2025,Tipper Truck,GT 8864-25,TT 13,20,224.6,235.4,10.8,6523,7100,577,28.85,20,Sulemena Kadri,Hauling Materials
+7/20/2025,Tipper Truck,GT 8848-25,TT 12,324,239.5,255.7,16.2,7473,8046,573,1.769,324,Gafaru Achimsa,Hauling Materials to Ahafo North  (Newmont)
+7/20/2025,Tipper Truck,GT 7721-25,TT 09,282,531.4,547.7,16.3,11603,12178,575,2.039,282,Alhassan Samed,Hauling Materials to Ahafo North  (Newmont)
+7/20/2025,Tipper Truck,GT 7720-25,TT 10,279,536.4,551.8,15.4,16506,17082,576,2.065,279,Abubakar Mohammed ,Hauling Materials to Ahafo North  (Newmont)
+7/20/2025,Tipper Truck,GT 7727-25,TT 08,270,534.8,551.3,16.5,16490,17064,574,2.126,270,Ibrahim Abdulai Saaka,Hauling Materials to Ahafo North  (Newmont)
+7/20/2025,Tipper Truck,GT 7769-25,TT 11,270,545.5,561.7,16.2,16113,16688,575,2.13,270,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+7/20/2025,Tipper Truck,GT 7855-25,TT 04,399,534.3,549.9,15.6,16732,17309,577,1.446,399,Timothy Abelpora,Hauling Materials to Ahafo North  (Newmont)
+7/20/2025,Tipper Truck,GT 7846-25,TT 06,333,565,582.2,17.2,17250,17824,574,1.724,333,Razak Abdul,Hauling Materials to Ahafo North  (Newmont)
+7/20/2025,Tipper Truck,GT 7858-25,TT 05,369,530.3,545.3,15,16726,17300,574,1.556,369,Samuel Korankye,Hauling Materials to Ahafo North  (Newmont)
+7/20/2025,Toyota White Pickup,GT 719-20,LV 01,68,0,0,0,237152,237736,584,8.588,68,Akwasi Boahen ,Staff transportation
+7/20/2025,Vulcanizer,Unknown,Unknown,4,0,0,0,0,0,0,0,4,Ishamel Mohammed,Laydown Works
+7/21/2025,Toyota White bus,GN 6692-11,BU 01,79,0,0,0,269551,270059,508,6.43,79,Akwasi Boahen ,Staff transportation
+7/21/2025,Block factory Gen.,Unknown,Unknown,15,0,0,0,0,0,0,0,15,Pajaro,Servicing Works
+7/21/2025,Wheel Loader 966H,GR 9391-24,LD 04,207,10001.9,10001.9,0,0,0,0,0,207,John Essien ,Laydown Works
+7/21/2025,Grader ,GR 6807-20,GD 01,229,3586.7,3595.9,9.2,0,0,0,0,229,Salisu Issaka,Laydown Works
+7/21/2025,Toyota Yellow Bus,GN 6323-21,BU 02,81,0,0,0,219239,219716,477,5.889,81,Haruna Sulemena,Staff transportation
+7/21/2025,Nissan Hard body,GT 2746-18,LV 02,68,0,0,0,0,211580,0,0,68,Samuel K. Mensah,Used by Engr Micheal Gyamfi 
+7/21/2025,Lowbed,GR 6795-24,TR 01,133,0,0,0,777061,777430,369,2.774,133,Kofi Nyamekye,Resettlement Works
+7/21/2025,Roller ,Unknown,RL 01,125,4751.3,4757.4,6.1,0,0,0,20.492,125,Salisu Issaka,Laydown Works
+7/21/2025,Toyota Hilux ,GW 4059-20,Unknown,69,0,0,0,1799.2,2334.8,535.6,7.762,69,Dennis Mintah,Used by Manager Minta
+7/22/2025,Green Hiab,GS 2453-21,TR 04,186,0,0,0,110990.9,111115.3,124.4,1.495,186,Kwame Kra,Resettlement Works
+7/22/2025,Tipper Truck,GT 7855-25,TT 04,311,549.9,569.5,19.6,17309,17884,575,1.849,311,Fuesni Adams,Hauling Materials to Ahafo North  (Newmont)
+7/22/2025,Tipper Truck,GT 7720-25,TT 10,270,551.8,570,18.2,17082,17658,576,2.133,270,Ibrahim Abdulai Saaka,Hauling Materials to Ahafo North  (Newmont)
+7/22/2025,Tipper Truck,GT 8864-25,TT 13,364,230.4,241,10.6,6580,7145,565,1.552,364,Mohammed Razak,Hauling Materials to Ahafo North  (Newmont)
+7/22/2025,Tipper Truck,GT 8848-25,TT 12,350,255.7,274.7,19,8046,8631,585,1.671,350,Mohammed Amin Alidu ,Hauling Materials to Ahafo North  (Newmont)
+7/22/2025,Car Washer 1,Unknown,Unknown,20,0,0,0,0,0,0,0,20,Bismark Kusi ,Washing of Various Plant 
+7/22/2025,Tipper Truck,GT 7858-25,TT 05,367,545.3,561.4,16.1,17300,17874,574,1.564,367,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+7/22/2025,Tipper Truck,GT 7727-25,TT 08,296,551.3,569.2,17.9,17064,17641,577,1.949,296,Abubakari Mohammed,Hauling Materials to Ahafo North  (Newmont)
+7/22/2025,Tipper Truck,GT 7846-25,TT 06,335,582.2,600.4,18.2,17824,18393,569,1.699,335,Abraham Arthur ,Hauling Materials to Ahafo North  (Newmont)
+7/22/2025,Tipper Truck,GT 7721-25,TT 09,286,547.7,565.3,17.6,12178,12755,577,2.017,286,Sulemena Kadri,Hauling Materials to Ahafo North  (Newmont)
+7/22/2025,Tipper Truck,GT 7769-25,TT 11,281,561.7,580.2,18.5,16688,17265,577,2.053,281,Paul Osei,Hauling Materials to Ahafo North  (Newmont)
+7/22/2025,Backhoe JCB,GR 4873-16,BH 01,64,0,0,0,0,0,0,0,64,Abdul Razak ,Laydown Works
+7/23/2025,Toyota White bus,GN 6692-11,BU 01,80,0,0,0,270059,270579,520,6.5,80,Akwasi Boahen ,Staff transportation
+7/23/2025,Tipper Truck,GT 7768-25,TT 07,268,0,282.8,0,0,7490,0,0,268,Ibrahim Razak,Hauling Materials to Ahafo North  (Newmont)
+7/23/2025,Welding Machine,Unknown,WM 01,60,0,0,0,0,0,0,0,60,Prince Essuman,Welding Works
+7/23/2025,Toyota Yellow Bus,GN 6323-21,BU 02,77,0,0,0,219716,220184,468,6.078,77,Felix Adu Gyimah,Staff transportation
+7/24/2025,Nissan Hard body,GT 2757-18,Unknown,72,0,0,0,0,184523,0,0,72,Kwame Brobbey,Used by Manager Samuel
+7/24/2025,Vulcanizer ,Unknown,Unknown,20,0,0,0,0,0,0,0,20,Ishamel Mohammed,Laydown Works
+7/24/2025,Toyota White Pickup,GT 719-20,LV 01,52,0,0,0,237736,238186,450,8.654,52,Samuel Antwi,Staff transportation
+7/24/2025,Wheel Loader 980K,GR 7483-24,LD 05,355,0,25153.3,25153.3,0,0,0,0.014,355,Adamu Seidu,Laydown Works
+7/24/2025,Daewoo Truck,GR 6168-24,TR 03,191,25153.3,25164.8,11.5,67192,672201,605009,3167.586,191,Yussif Karim,Resettlement Works
+7/24/2025,Tipper Truck,GT 7858-25,TT 05,367,561.4,581.3,19.9,17874,18552,678,1.847,367,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+7/24/2025,Tower light,4NX3855,TL 03,40,0,0,0,0,0,0,0,40,Edmond Kyeremeh,Laydown Works
+7/24/2025,Tipper Truck,GT 7727-25,TT 08,317,569.2,591.8,22.6,17641,18378,737,2.325,317,Solomon,Hauling Materials to Ahafo North  (Newmont)
+7/24/2025,Tipper Truck,GT 7721-25,TT 09,312,565.3,586,20.7,12755,13436,681,2.183,312,Gafaru Achimsa,Hauling Materials to Ahafo North  (Newmont)
+7/24/2025,Tipper Truck,GT 7846-25,TT 06,354,600.4,622,21.6,18398,19077,679,1.918,354,Alhassan Samed,Hauling Materials to Ahafo North  (Newmont)
+7/24/2025,Tipper Truck,GT 8848-25,TT 12,357,274.7,623,348.3,8631,9309,678,1.899,357,Iddrisu Moro,Hauling Materials to Ahafo North  (Newmont)
+7/24/2025,Tipper Truck,GT 7769-25,TT 11,343,580.2,593.5,13.3,17265,17855,590,1.72,343,Paul Osei,Hauling Materials to Ahafo North  (Newmont)
+7/24/2025,Tipper Truck,GT 7720-25,TT 10,307,570.1,593.5,23.4,17658,18337,679,2.212,307,Ibrahim Abdulai Saaka,Hauling Materials to Ahafo North  (Newmont)
+7/24/2025,Tipper Truck,GT 7855-25,TT 04,345,569.5,592.1,22.6,17884,18562,678,1.965,345,Johnson Degraft,Hauling Materials to Ahafo North  (Newmont)
+7/24/2025,Welding Machine,Unknown,WM 01,40,0,0,0,0,0,0,0,40,Prince Essuman,Welding Works
+7/25/2025,Block factory Gen.,Unknown,Unknown,215,0,0,0,0,0,0,0,215,Ebenezer Agyapong,Laydown Works
+7/25/2025,Green Hiab,GS 2453-21,TR 04,187,0,0,0,111115.3,111213.8,98.5,1.898,187,Kwame Kra,Resettlement Works
+7/25/2025,Grader ,GR 6806-20,GD 02,150,0,6424.3,6424.3,0,0,0,0,150,Salisu Issaka,Laydown Works
+7/25/2025,Toyota White bus,GN 6692-11,BU 01,62,0,0,0,270579,270983,404,6.516,62,Kwadwo Yeboah,Staff transportation
+7/25/2025,Lowbed,GR 6795-24,TR 01,279,0,0,0,777430,777932,502,1.799,279,Kofi Nyamekye,Resettlement Works
+7/25/2025,Toyota Yellow Bus,GN 6323-21,BU 02,63,0,0,0,220184,220614,430,6.825,63,Felix Adu Gyimah,Staff transportation
+7/26/2025,Car Washer 1,Unknown,Unknown,20,0,0,0,0,0,0,0,20,Bismark Kusi ,Washing of Various Plant 
+7/26/2025,Bulldozer,Dozer (D8T),BD 01,200,0,4692.6,0,0,0,0,0,200,Baba Musah,Clearing land 
+7/26/2025,Excavator 330GC ,Unknown,EX 06,215,6594.3,6617.7,23.4,0,0,0,9.188,215,Gariba Mohammed ,Laydown Works
+7/26/2025,Tipper Truck,GT 7721-25,TT 09,277,586,604.7,18.7,13436,14029,593,2.141,277,Sulemena Kadri,Hauling Materials to Ahafo North  (Newmont)
+7/26/2025,Tipper Truck,GT 8848-25,TT 12,329,297.1,316.5,19.4,9309,9902,593,1.802,329,Mohammed Amin Alidu ,Hauling Materials to Ahafo North  (Newmont)
+7/26/2025,Tipper Truck,GT 7720-25,TT 10,278,593.5,613.3,19.8,18337,18930,593,2.133,278,Ibrahim Abdulai Saaka,Hauling Materials to Ahafo North  (Newmont)
+7/26/2025,Tipper Truck,GT 7855-25,TT 04,345,592.1,608.5,16.4,18562,19157,595,1.725,345,Fuesni Adams,Hauling Materials to Ahafo North  (Newmont)
+7/26/2025,Tipper Truck,GT 7846-25,TT 06,328,622,641.7,19.7,19077,19671,594,1.811,328,Abraham Arthur ,Hauling Materials to Ahafo North  (Newmont)
+7/26/2025,Tipper Truck,GT 7727-25,TT 08,278,591.8,611.7,19.9,18378,18978,600,2.158,278,Abubakari Mohammed,Hauling Materials to Ahafo North  (Newmont)
+7/26/2025,Tipper Truck,GT 7858-25,TT 05,372,581.3,600.1,18.8,18552,19148,596,1.602,372,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+7/26/2025,Tipper Truck,GT 7769-25,TT 11,296,593.5,624.2,30.7,17855,18594,739,2.497,296,Paul Osei,Hauling Materials to Ahafo North  (Newmont)
+7/27/2025,Nissan Hard body,GT 2746-18,LV 02,69,0,0,0,211580,212084,504,7.304,69,Dennis Mintah,Used by Engr Micheal Gyamfi 
+7/27/2025,Bulldozer,Dozer (D8T),BD 01,645,4692.6,4698,5.4,0,0,0,119.444,645,Baba Musah,Laydown Works
+7/27/2025,Tipper Truck,GT 8864-25,TT 13,125,241,251.2,10.2,7095,7303,208,1.664,125,Mohammed Tanko,Hauling Materials to Ahafo North  (Newmont)
+7/27/2025,Welding Machine,Unknown,WM 01,40,0,0,0,0,0,0,0,40,Philip Osei,Welding Works
+7/27/2025,Toyota White Pickup,GT 719-20,LV 01,44,0,0,0,238186,238574,260,5.909,44,Akwasi Boahen ,Staff transportation
+7/28/2025,Tipper Truck,GT 8848-25,TT 12,175,316.5,329.7,13.2,9902,10162,260,1.486,175,Mohammed Amin Alidu ,Hauling Materials to Ahafo North  (Newmont)
+7/28/2025,Tipper Truck,GT 8864-25,TT 13,160,251.2,262.5,11.3,7303,7561,258,1.613,160,Mohammed Tanko,Hauling Materials to Ahafo North  (Newmont)
+7/28/2025,Tipper Truck,GT 7769-25,TT 11,133,624.2,636.1,11.9,18594,18855,261,1.962,133,Paul Osei,Hauling Materials to Ahafo North  (Newmont)
+7/28/2025,Tipper Truck,GT 7727-25,TT 08,135,611.7,623,11.3,18978,19238,260,1.926,135,Abubakari Mohammed,Hauling Materials to Ahafo North  (Newmont)
+7/28/2025,Tipper Truck,GT 7846-25,TT 06,167,641.7,653.3,11.6,19671,19932,261,1.563,167,Abraham Arthur ,Hauling Materials to Ahafo North  (Newmont)
+7/28/2025,Tipper Truck,GT 7720-25,TT 10,123,613.3,625.4,12.1,18930,19189,259,2.106,123,Ibrahim Abdulai Saaka,Hauling Materials to Ahafo North  (Newmont)
+7/28/2025,Tipper Truck,GT 7721-25,TT 09,136,604.7,616.6,11.9,14029,14290,261,1.919,136,Gafaru Achimsa,Hauling Materials to Ahafo North  (Newmont)
+7/28/2025,Volvo Tipper Truck,GB 8673-22,Unknown,316,0,6672,6672,0,51674.6,51674.6,21.114,316,Unknown,Hauling Boulders
+7/28/2025,Tipper Truck,GT 7855-25,TT 04,155,608.5,621.6,13.1,19157,19418,261,1.684,155,Fuesni Adams,Hauling Materials to Ahafo North  (Newmont)
+7/28/2025,Tipper Truck,GT 7768-25,TT 07,236,282.8,308.4,25.6,7490,7957,467,1.979,236,Ibrahim Abdul Razak,Hauling Materials to Ahafo North  (Newmont)
+7/28/2025,Tipper Truck,GT 7858-25,TT 05,231,600.1,612.8,12.7,19148,19409,261,1.13,231,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+7/28/2025,Concrete Mixer,Unknown,Unknown,20,0,0,0,0,0,0,0,20,Kofi Asando ,Laydown Works
+7/28/2025,Bulldozer,Dozer (D8T),BD 01,426,4698,4709.3,11.3,0,0,0,11.055,426,Baba Musah,Laydown Works
+7/29/2025,Toyota Hilux ,GW 4059-20,Unknown,46,0,0,0,2334.8,2759.8,425,9.239,46,Akwasi Boahen ,Used by Manager Minta
+7/29/2025,Tipper Truck,GT 7721-25,TT 09,251,616.6,635.2,18.6,14290,14884,594,2.367,251,Gafaru Achimsa,Hauling Materials to Ahafo North  (Newmont)
+7/29/2025,Tipper Truck,GT 7720-25,TT 10,262,625.4,644.9,19.5,19189,19788,599,2.286,262,Ibrahim Abdulai Saaka,Hauling Materials to Ahafo North  (Newmont)
+7/29/2025,Vulcanizer,Unknown,Unknown,20,0,0,0,0,0,0,0,20,Omar Shabar,Laydown Works
+7/29/2025,Tipper Truck,GT 7769-25,TT 11,274,636.1,656,19.9,18855,19447,592,2.161,274,Paul Osei,Hauling Materials to Ahafo North  (Newmont)
+7/29/2025,Grader ,GR 6807-20,GD 01,261,3595.9,3615.7,19.8,0,0,0,0,261,Salisu Issaka,Laydown Works
+7/29/2025,Water Bowser,GT 7828-25,WB 01,226,0,163.7,163.7,2094,2410,316,1.398,226,Kofi Nyamekye,Suppressing dust/ supplying water to the various place
+7/29/2025,Tipper Truck,GT 7727-25,TT 08,264,623,641.8,18.8,19238,19831,593,2.246,264,Abubakari Mohammed,Hauling Materials to Ahafo North  (Newmont)
+7/29/2025,Tipper Truck,GT 8864-25,TT 13,354,262.5,282.9,20.4,7561,8236,675,1.907,354,Mohammed Tanko,Hauling Materials to Ahafo North  (Newmont)
+7/29/2025,Tipper Truck,GT 7855-25,TT 04,314,621.6,641.2,19.6,19,20095,20076,63.936,314,Fuesni Adams,Hauling Materials to Ahafo North  (Newmont)
+7/29/2025,Tipper Truck,GT 8848-25,TT 12,346,329.7,352.2,22.5,10162,10837,675,1.951,346,Mohammed Amin Alidu ,Hauling Materials to Ahafo North  (Newmont)
+7/29/2025,Tipper Truck,GT 7846-25,TT 06,364,653.3,674.1,20.8,19932,20610,678,1.863,364,Abraham Arthur ,Hauling Materials to Ahafo North  (Newmont)
+7/29/2025,Tipper Truck,GT 7858-25,TT 05,396,612.8,631.9,19.1,19409,20088,679,1.715,396,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+7/30/2025,Car Washer 1,Unknown,Unknown,20,0,0,0,0,0,0,0,20,Bismark Kusi ,Washing of Various Plant 
+7/30/2025,Tipper Truck,GT 7768-25,TT 07,144,308.4,320.6,12.2,7957,8254,297,2.063,144,Ibrahim Abdul Razak,Hauling Materials to Ahafo North  (Newmont)
+7/30/2025,Newmont Dam,Unknown,Unknown,25,0,0,0,0,0,0,0,25,Kofi Nyamekye,For taking water in bowser
+7/30/2025,Toyota Yellow Bus,GN 6323-21,BU 02,66,0,0,0,220614,221321,707,10.712,66,Haruna Sulemena,Staff transportation
+7/30/2025,Tower light,4NX3850,TL 04,40,0,0,0,0,0,0,0,40,Kontor Shadrack,Laydown Works
+7/30/2025,Tower light,4NX3855,TL 03,20,0,0,0,0,0,0,0,20,Kontor Shadrack,Laydown Works
+7/30/2025,Tower light,4NX3849,TL 01,40,0,0,0,0,0,0,0,40,Kontor Shadrack,Laydown Works
+7/31/2025,Toyota White bus,GN 6692-11,BU 01,74,0,0,0,271718,272134,416,5.622,74,Kwadwo Yeboah,Staff transportation
+7/31/2025,Roller ,Unknown,RL 03,99,0,9420,9420,0,0,0,0.011,99,Kofi Nyamekye,Laydown Works
+7/31/2025,Toyota White Pickup,GT 719-20,LV 01,53,0,0,0,238574,239020,446,8.415,53,Akwasi Boahen ,Staff transportation
+7/31/2025,Green Hiab,GS 2453-21,TR 04,185,0,0,0,111213.8,111334.4,120.6,1.534,185,Kwame Kra,Resettlement Works
+7/31/2025,Daewoo Truck,GR 6168-24,TR 03,211,0,0,0,672201,672524,323,1.531,211,Yussif Karim,Resettlement Works
+7/31/2025,Wheel Loader 980K,GR 7483-24,LD 05,250,25153.3,25164.8,11.5,0,0,0,21.739,250,Adamu ,Laydown Works
+7/31/2025,Excavator 330GC ,Unknown,EX 06,200,6617.7,6636.8,19.1,0,0,0,10.471,200,Ibrahim Issaka,Laydown Works
+7/31/2025,Block factory Gen.,Unknown,Unknown,215,0,0,0,0,0,0,0,215,Ebenezer Agyapong,Laydown Works
+7/31/2025,Wheel Loader 966H,GR 9391-24,LD 04,186,10001.9,10001.9,0,0,0,0,0,186,Baba Musah,Laydown Works
+7/31/2025,Toyota Hilux ,GW 4059-20,Unknown,50,0,0,0,2759.8,3242.6,482.8,9.656,50,Dennis Mintah,Used by Manager Minta
+7/31/2025,Car Washer 1,Unknown,Unknown,10,0,0,0,0,0,0,0,10,Bismark Kusi ,Washing of Various Plant 
+7/31/2025,Tipper Truck,GT 7858-25,TT 05,229,631.9,648,16.1,20088,20456,368,1.607,229,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+7/31/2025,Tipper Truck,GT 7855-25,TT 04,220,641.2,657.8,16.6,20095,20453,358,1.627,220,Fuesni Adams,Hauling Materials to Ahafo North  (Newmont)
+7/31/2025,Tipper Truck,GT 7846-25,TT 06,246,647.1,691.8,44.7,20610,20977,367,1.492,246,Abraham Arthur ,Hauling Materials to Ahafo North  (Newmont)
+7/31/2025,Tipper Truck,GT 7768-25,TT 07,176,320.6,336.6,16,8254,8608,354,2.011,176,Ibrahim Abdul Razak,Hauling Materials to Ahafo North  (Newmont)
+7/31/2025,Tipper Truck,GT 8864-25,TT 13,238,282.9,301.3,18.4,8236,8600,364,1.529,238,Unknown,Hauling Materials to Ahafo North  (Newmont)
+7/31/2025,Tipper Truck,GT 8848-25,TT 12,220,352.2,371.2,19,10837,11189,352,1.6,220,Sulemena Kadri,Hauling Materials to Ahafo North  (Newmont)
+7/31/2025,Bulldozer,Dozer (D8T),BD 01,392,4709.3,4719.9,10.6,0,0,0,12.041,392,Baba Musah,Laydown Works
+7/31/2025,Tipper Truck,GT 7727-25,TT 08,293,641.8,665,23.2,19831,20511,680,2.321,293,Alhassan Samed,Hauling Materials to Ahafo North  (Newmont)
+7/31/2025,Tipper Truck,GT 7769-25,TT 11,325,656,678.2,22.2,19447,20126,679,2.089,325,Paul Osei,Hauling Materials to Ahafo North  (Newmont)
+7/31/2025,Tipper Truck,GT 7720-25,TT 10,295,644.9,668.4,23.5,19788,20475,687,2.329,295,Ibrahim Abdulai Saaka,Hauling Materials to Ahafo North  (Newmont)
+7/31/2025,Tipper Truck,GT 7721-25,TT 09,282,635.2,655.3,20.1,14884,15461,577,2.046,282,Gafaru Achimsa,Hauling Materials to Ahafo North  (Newmont)
+8/1/2025,Nissan Hard body,GT 2757-18,Unknown,70,0,0,0,184523,185093,570,8.143,70,Emmanuel Quaye,Used by Manager Samuel
+8/2/2025,Grader ,GR 6807-20,GD 01,218,3615.7,3637.3,21.6,0,0,0,0,218,Salisu Issaka ,Laydown Works
+8/2/2025,Toyota Yellow Bus,GN 6323-21,BU 02,67,0,0,0,221321,221726,405,6.045,67,Kwame Brobbey,Staff transportation
+8/2/2025,Roller ,Unknown,RL 03,192,9420,9431,11,0,0,0,17.455,192,Kofi Nyamekye,Road construction
+8/2/2025,Toyota White bus,GN 6692-11,BU 01,60,0,0,0,272134,272519,385,6.417,60,Kwadwo Yeboah,Staff transportation
+8/2/2025,Water Bowser,GT 7828-25,WB 01,18,163.7,185.1,21.4,2410,2612,202,11.222,18,John Alanyo,Suppressing dust/ supplying water to the various place
+8/4/2025,Welding Machine,Unknown,WM 01,40,0,0,0,0,0,0,0,40,Michael Ofori,Welding Works
+8/4/2025,Tipper Truck,GT 7720-25,TT 10,321,668.4,690.3,21.9,20475,21159,684,2.131,321,Abubakari Mohamed,Hauling Materials to Ahafo North  (Newmont)
+8/4/2025,Tipper Truck,GT 7721-25,TT 09,335,655.3,677.5,22.2,15461,16173,712,2.125,335,Sulemena Kadri,Hauling Materials to Ahafo North  (Newmont)
+8/4/2025,Tipper Truck,GT 7727-25,TT 08,300,665,687.3,22.3,20511,21192,681,2.27,300,Alhassan Samed,Hauling Materials to Ahafo North  (Newmont)
+8/4/2025,Tipper Truck,GT 7855-25,TT 04,316,657.8,680.4,22.6,20453,21132,679,2.149,316,Gafarua Achimsa,Hauling Materials to Ahafo North  (Newmont)
+8/4/2025,Tipper Truck,GT 8848-25,TT 12,346,371.2,392.6,21.4,11189,11866,677,1.957,346,Mohammed Amin Alidu ,Hauling Materials to Ahafo North  (Newmont)
+8/4/2025,Wheel Loader 980K,GR 7483-24,LD 05,243,25164.8,25178.6,13.8,0,0,0,17.609,243,Salisu Issaka,Laydown Works
+8/4/2025,Tipper Truck,GT 7769-25,TT 11,338,678.2,703.4,25.2,20126,20849,723,2.139,338,Paul Osei,Hauling Materials to Ahafo North  (Newmont)
+8/4/2025,Tipper Truck,GT 7846-25,TT 06,354,691.8,715.1,23.3,20977,21656,679,1.918,354,Abraham Arthur ,Hauling Materials to Ahafo North  (Newmont)
+8/4/2025,Tipper Truck,GT 7858-25,TT 05,329,648,671.2,23.2,20456,21135,679,2.064,329,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+8/4/2025,Block factory Gen.,Unknown,Unknown,215,1796.6,1823.8,27.2,0,0,0,7.904,215,Ebenezer Agyapong,Laydown Works
+8/4/2025,Excavator 330GC ,Unknown,EX 06,369,6636.8,6648.4,11.6,0,0,0,31.81,369,Gariba Mohammed,Laydown Works
+8/5/2025,Nissan Hard body,GT 2746-18,LV 02,58,0,0,0,212084,212533,449,7.741,58,Michael Gyamfi ,Used by Eng. Michael Gyamfi
+8/5/2025,Toyota White bus,GN 6692-11,BU 01,72,0,0,0,272519,272987,468,6.5,72,Kwame Brobbey,Staff transportation
+8/5/2025,Toyota White Pickup,GT 719-20,LV 01,57,0,0,0,239020,239637,617,10.825,57,Samuel Anthony,Staff transportation
+8/5/2025,Concrete Mixer,Unknown,Unknown,21,0,0,0,0,0,0,0,21,Kofi Asando ,Laydown Works
+8/5/2025,Nissan Hard body,GT 2757-18,Unknown,69,0,0,0,185093,185846,753,10.913,69,Kwame Brobbey,Used by Manager Samuel
+8/5/2025,Green Hiab,GS 2453-21,TR 04,200,0,0,0,111334.4,111467.4,133,1.504,200,Kwame Kra,Resettlement Works
+8/6/2025,Newmont Dam,Unknown,Unknown,25,0,0,0,0,0,0,0,25,Kofi Nyamekye,To pump water for the GT 7828-25
+8/6/2025,Water Bowser,GT 7828-25,WB 01,217,185.1,190.3,5.2,2612,2658,46,0.212,217,Kofi Nyamekye,Suppressing dust/ supplying water to the various place
+8/6/2025,Toyota Hilux ,GW 4059-20,Unknown,49,0,0,0,3242.6,236175,232932.4,4753.722,49,Kwame Brobbey,Used by Manager Minta
+8/6/2025,Lowbed,GR 6795-24,TR 01,244,0,0,0,777932,778255,323,1.324,244,John Alanyo,Resettlement Works
+8/6/2025,Toyota White bus,GN 6692-11,BU 01,52,0,0,0,272987,273304,317,6.096,52,Felix Adu Gyimah,Staff transportation
+8/6/2025,Tipper Truck,GT 7846-25,TT 06,324,715.1,734.3,19.2,21656,22260,604,1.864,324,Abraham Arthur ,Hauling Materials to Ahafo North  (Newmont)
+8/6/2025,Tipper Truck,GT 7720-25,TT 10,229,690.3,707.3,17,21159,21651,492,2.148,229,Abubakari Mohamed,Hauling Materials to Ahafo North  (Newmont)
+8/6/2025,Tipper Truck,GT 7769-25,TT 11,250,703.4,722.9,19.5,20849,21379,530,2.12,250,Paul Osei,Hauling Materials to Ahafo North  (Newmont)
+8/6/2025,Tipper Truck,GT 7727-25,TT 08,242,687.3,706,18.7,21192,21696,504,2.083,242,Alhassan Samed,Hauling Materials to Ahafo North  (Newmont)
+8/6/2025,Tipper Truck,GT 8848-25,TT 12,288,392.6,414.7,22.1,11866,12414,548,1.903,288,Mohammed Amin Alidu ,Hauling Materials to Ahafo North  (Newmont)
+8/6/2025,Tipper Truck,GT 7721-25,TT 09,237,677.5,697.4,19.9,16173,16678,505,2.131,237,Sulemena Kadri,Hauling Materials to Ahafo North  (Newmont)
+8/6/2025,Tipper Truck,GT 7858-25,TT 05,320,671.2,685.9,14.7,21135,21634,499,1.559,320,Sulemena Kadri,Hauling Materials to Ahafo North  (Newmont)
+8/7/2025,Wheel Loader 966H,GR 9391-24,LD 04,281,10001.9,10003.6,1.7,0,0,0,165.294,281,Adamu ,Laydown Works
+8/7/2025,Bulldozer,Dozer (D8T),BD 01,343,4719.9,4729.3,9.4,0,0,0,13.788,343,Baba Musah,Laydown Works
+8/7/2025,Welding Machine,Unknown,WM 01,40,0,0,0,0,0,0,0,40,Prince Essuman,Welding Works
+8/7/2025,Tower light ,4NX3850,TL 04,47,0,6173,6173,0,0,0,0.008,47,Kontor Shadrack,Laydown Works
+8/8/2025,Excavator 330GC ,Unknown,EX 06,239,6648.4,6665,16.6,0,0,0,14.398,239,Ibrahim Issaka,Working at borrowed pit(Ntotroso)
+8/8/2025,Block factory Gen.,Unknown,Unknown,215,1823.8,1868.58,44.8,0,0,0,4.801,215,Ibrahim Abdulai Saaka,Laydown Works
+8/8/2025,Toyota Yellow Bus,GN 6323-21,BU 02,70,0,0,0,221726,222566,840,12,70,Haruna Sulemena,Staff transportation
+8/8/2025,Toyota White bus,GN 6692-11,BU 01,64,0,0,0,273304,273719,415,6.484,64,Felix Adu Gyimah,Staff transportation
+8/8/2025,Car Washer 1,Unknown,Unknown,10,0,0,0,0,0,0,0,10,Bismark Kusi,Washing of Various Plant 
+8/8/2025,Tipper Truck,GT 8848-25,TT 12,115,414.7,0,414.7,12414,12616,202,1.757,115,Mohammed Amin Alidu ,Hauling Materials to Ahafo North  (Newmont)
+8/8/2025,Tipper Truck,GT 7727-25,TT 08,93,706,713.3,7.3,21696,21898,202,2.172,93,Abubakari Mohammed,Hauling Materials to Ahafo North  (Newmont)
+8/8/2025,Tipper Truck,GT 7846-25,TT 06,124,734.3,743.5,9.2,22260,22465,205,1.653,124,Abraham Arthur ,Hauling Materials to Ahafo North  (Newmont)
+8/8/2025,Servicing ,Unknown,Unknown,40,0,0,0,0,0,0,0,40,Adutumah Raphorel Osei,Servicing Works
+8/8/2025,Tipper Truck,GT 7720-25,TT 10,96,707.3,715.1,7.8,21651,21852,201,2.094,96,Ibrahim Abdulai Saaka,Hauling Materials to Ahafo North  (Newmont)
+8/8/2025,Tipper Truck,GT 7721-25,TT 09,111,697.4,708.2,10.8,16678,16923,245,2.207,111,Gafaru Achimsa,Hauling Materials to Ahafo North  (Newmont)
+8/8/2025,Tipper Truck,GT 7858-25,TT 05,118,685.9,0,685.9,21634,21837,203,1.72,118,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+8/9/2025,Toyota White Pickup,GT 719-20,LV 01,56,0,0,0,239637,240076,439,7.839,56,Akwasi Boahen,Staff transportation
+8/9/2025,Excavator 336E,Unknown,EX 03,418,0,13996.9,13996.9,0,0,0,0.03,418,Baba Musah,Laydown Works
+8/9/2025,Tipper Truck,GT 7769-25,TT 11,262,722.9,744,21.1,21379,21881,502,1.916,262,Fuseni Adams,Hauling Materials to Ahafo North  (Newmont)
+8/9/2025,Tipper Truck,GT 7721-25,TT 09,100,708.2,716.2,8,16923,17142,219,2.19,100,Gafaru Achimsa,Hauling Materials to Ahafo North  (Newmont)
+8/9/2025,Tipper Truck,GT 7720-25,TT 10,96,715.1,723.7,8.6,21852,22071,219,2.281,96,Ibrahim Abdulai Saaka,Hauling Materials to Ahafo North  (Newmont)
+8/9/2025,Tipper Truck,GT 7727-25,TT 08,115,713.3,722.9,9.6,21898,22141,243,2.113,115,Abubakari Mohammed,Hauling Materials to Ahafo North  (Newmont)
+8/9/2025,Tipper Truck,GT 7858-25,TT 05,199,0,699.9,699.9,21837,22056,219,1.101,199,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+8/9/2025,Tipper Truck,GT 7846-25,TT 06,131,743.5,751.4,7.9,22465,22684,219,1.672,131,Abraham Arthur ,Hauling Materials to Ahafo North  (Newmont)
+8/9/2025,Tipper Truck,GT 8848-25,TT 12,135,0,433.9,433.9,12616,12836,220,1.63,135,Mohammed Amin Alidu ,Hauling Materials to Ahafo North  (Newmont)
+8/9/2025,Toyota White bus,GN 6692-11,BU 01,52,0,0,0,273719,274070,351,6.75,52,Felix Adu Gyimah,Staff transportation
+8/9/2025,Tipper Truck,GT 7768-25,TT 07,286,336.6,382.4,45.8,8608,9138,530,1.853,286,Ibrahim Abdula Razak,Hauling Materials to Ahafo North  (Newmont)
+8/9/2025,Tipper Truck,GT 7855-25,TT 04,279,680.4,716.1,35.7,21132,21589,457,1.638,279,Johnson Degraft,Hauling Materials to Ahafo North  (Newmont)
+8/10/2025,Toyota Hilux ,GW 4059-20,Unknown,41,0,0,0,236175,236556,381,9.293,41,Dennis Mintah,Used by Manager Minta
+8/11/2025,Excavator 330GC,Unknown,EX 06,334,6665,6683.9,18.9,0,0,0,17.672,334,Ibrahim Issaka,Laydown Works
+8/11/2025,Bulldozer,Dozer (D8T),BD 01,463,4729.3,4742.3,13,0,0,0,10.243,463,Baba Musah,Laydown Works
+8/11/2025,Green Hiab,GS 2453-21,TR 04,167,0,0,0,111467.4,111580.7,113.3,1.474,167,Kwame Kra,Resettlement Works
+8/11/2025,Block Factory Gen.,Unknown,Unknown,215,1868.58,1899.3,30.7,0,0,0,6.999,215,Ebenezer Agyapong,Laydown Works
+8/11/2025,Toyota White bus,GN 6692-11,BU 01,55,0,0,0,274070,274436,366,6.655,55,Kwame Brobbey,Staff transportation
+8/12/2025,Nissan Hard body,GT 2757-18,Unknown,64,0,0,0,185846,186370,524,8.188,64,Samuel K. Mensah,Used by Manager Samuel
+8/12/2025,Tipper Truck,GT 7721-25,TT 09,209,716.2,729.9,13.7,17142,17553,411,1.967,209,Gafaru Achimsa,Hauling Materials to Ahafo North  (Newmont)
+8/12/2025,Tipper Truck,GT 7727-25,TT 08,209,722.9,738,15.1,22141,22548,407,1.947,209,Alhassan Samed,Hauling Materials to Ahafo North  (Newmont)
+8/12/2025,Tipper Truck,GT 7720-25,TT 10,209,723.7,739.3,15.6,22071,22478,407,1.947,209,Ibrahim Abdulai Saaka,Hauling Materials to Ahafo North  (Newmont)
+8/12/2025,Tipper Truck,GT 7769-25,TT 11,217,744,761.6,17.6,21881,22315,434,2,217,Fuseni Adams,Hauling Materials to Ahafo North  (Newmont)
+8/12/2025,Tipper Truck,GT 8848-25,TT 12,234,433.9,449.3,15.4,12836,13243,407,1.739,234,Sulemena Kadri,Hauling Materials to Ahafo North  (Newmont)
+8/12/2025,Tipper Truck,GT 7858-25,TT 05,370,699.9,713.8,13.9,22056,22482,426,1.151,370,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+8/12/2025,Toyota Yellow Bus,GN 6323-21,BU 02,83,0,0,0,222566,223019,453,5.458,83,Felix Adu Gyimah,Staff transportation
+8/12/2025,Tipper Truck,GT 7846-25,TT 06,256,751.4,769.1,17.7,22684,23098,414,1.617,256,Abraham Arthur,Hauling Materials to Ahafo North  (Newmont)
+8/13/2025,Roller ,Unknown,RL 01,214,4757.4,4770.6,13.2,0,0,0,16.212,214,Kofi Nyamekye,Laydown Works
+8/13/2025,Welding Machine,Unknown,WM 01,40,0,0,0,0,0,0,0,40,Prince Essuman,Welding Works
+8/13/2025,Excavator 330GC,Unknown,EX 06,305,6683.9,6701.7,17.8,0,0,0,17.135,305,Gariba Mohmmed ,Unknown
+8/13/2025,Car Washer 1,Unknown,Unknown,20,0,0,0,0,0,0,0,20,Bismark Kusi ,Washing of Various Plant 
+8/13/2025,Toyota White bus,GN 6692-11,BU 01,70,0,0,0,274436,274857,421,6.014,70,Kwadwo Yeboah,Staff transportation
+8/13/2025,Block Factory Gen.,Unknown,Unknown,215,1899.3,1930.8,31.5,0,0,0,6.825,215,Ebenezer Agyapong,Laydown Works
+8/14/2025,Bulldozer,Dozer (D8T),BD 01,446,4742.3,4754.6,12.3,0,0,0,10.661,446,Baba Musah,Laydown Works
+8/14/2025,Toyota White Pickup,GT 719-20,LV 01,64,0,0,0,240076,240598,522,8.156,64,Samuel Antwi,Staff transportation
+8/14/2025,Tower light ,4NX3850,TL 04,20,6173,6253,80,0,0,0,0.25,20,Kontor Shadrack,Laydown Works
+8/14/2025,Green Hiab,GS 2453-21,TR 04,193,0,0,0,111580.7,111744.9,164.2,1.175,193,Kofi Nyamekye,Resettlement Works
+8/14/2025,Toyota Hilux ,GW 4059-20,Unknown,60,0,0,0,236556,237096,540,9,60,Dennis Mintah,Used by Manager Minta
+8/14/2025,Toyota White bus,GN 6692-11,BU 01,53,0,0,0,274857,275163,306,5.774,53,Kwadwo Yeboah,Staff transportation
+8/15/2025,Excavator 336E,Unknown,EX 04,151,0,15483.7,15483.7,0,0,0,0.01,151,Gabriba Mohammed,Laydown Works
+8/16/2025,Concrete Mixer ,Unknown,Unknown,20,0,0,0,0,0,0,0,20,Kofi Asando ,Laydown Works
+8/16/2025,Toyota White bus,GN 6692-11,BU 01,55,0,0,0,275163,275500,337,6.127,55,Kwadwo Yeboah,Staff transportation
+8/16/2025,Tower light ,4NX3850,TL 04,20,6253,6275,22,0,0,0,0.909,20,Kontor Shadrack,Laydown Works
+8/16/2025,Excavator 330GC,Unknown,EX 05,10,4339.3,0,4339.3,0,0,0,0.002,10,Kontor Shadrack,Servicing Works
+8/16/2025,Toyota Yellow Bus,GN 6323-21,BU 02,55,0,0,0,223019,223309,290,5.273,55,Felix Adu Gyimah,Staff transportation
+8/16/2025,Car Washer 1,Unknown,Unknown,20,0,0,0,0,0,0,0,20,Bismark Kusi,Washing of Various Plant 
+8/16/2025,Lowbed,GR 6795-24,TR 01,100,0,0,0,778255,778587,332,3.32,100,John Alanyo,Resettlement Works
+8/16/2025,Nissan Hard body,GT 2757-18,Unknown,55,0,0,0,186370,186788,418,7.6,55,Samuel K. Mensah,Used by Manager Samuel
+8/16/2025,Toyota White Pickup,GT 719-20,LV 01,37,0,0,0,240598,240910,312,8.432,37,Samuel Antwi,Staff transportation
+8/18/2025,Excavator 330GC,Unknown,EX 06,316,6701.7,6720.1,18.4,0,0,0,17.174,316,Ibrahim Issaka,Loading of boulder at Rank camp into the trucks
+8/18/2025,Tipper Truck,GT 8848-25,TT 12,100,449.3,462,12.7,13243,13584,341,3.41,100,Abraham Arthur,Laydown Works
+8/18/2025,Tipper Truck,GT 7858-25,TT 05,101,713.8,723.6,9.8,22482,22788,306,3.03,101,John Degraft ,Laydown Works
+8/18/2025,Vulcanizer,Unknown,Unknown,10,0,0,0,0,0,0,0,10,Omar Shabar,Laydown Works
+8/18/2025,Nissan Hard body,GT 2757-18,Unknown,52,0,0,0,186788,187212,424,8.154,52,Kwame Brobbey,Errands at Sunyani 
+8/18/2025,Nissan Hard body,GT 2746-18,LV 02,50,0,0,0,212533,213239,706,14.12,50,Michael Gyamfi ,Used by Engr Micheal Gyamfi 
+8/18/2025,Block Factory Gen.,Unknown,Unknown,100,1930.8,1968.4,37.6,0,0,0,2.66,100,Ebenezer Agyapong,Laydown Works
+8/19/2025,Tipper Truck,GT 7727-25,TT 08,199.09,738,757.2,19.2,22548,23075,527,2.647,199.09,Abubakar Mohammed ,Hauling Materials to Ahafo North  (Newmont)
+8/19/2025,Tipper Truck,GT 7720-25,TT 10,199.09,739.3,765,25.7,22478,23093,615,0.832,739.3,Alhassan Samed,Hauling Materials to Ahafo North  (Newmont)
+8/19/2025,Tipper Truck,GT 7768-25,TT 07,199.09,382.4,424.5,42.1,9138,9798,660,3.315,199.09,Ibrahim Abdul Razak,Hauling Materials to Ahafo North  (Newmont)
+8/19/2025,Tipper Truck,GT 7769-25,TT 11,199.09,761.6,0,761.6,22315,23094,779,3.913,199.09,Paul Osei,Hauling Materials to Ahafo North  (Newmont)
+8/19/2025,Toyota Yellow Bus,GN 6323-21,BU 02,50,0,0,0,223309,223821,512,10.24,50,Felix Adu Gyimah,Staff transportation
+8/19/2025,Welding Machine,Unknown,WM 01,20,0,0,0,0,0,0,0,20,Prince Essuman,Welding Works
+8/19/2025,Green Hiab,GS 2453-21,TR 04,50,0,0,0,111744.9,111830.7,85.8,0.583,50,Kwame Kra,Resettlement Works
+8/19/2025,Toyota Hilux ,GW 4059-20,Unknown,20,0,0,0,237096,237688,592,29.6,20,Dennis Mintah,Used by Manager Minta
+8/19/2025,Toyota White bus,GN 6692-11,BU 01,75,0,0,0,275500,275948,448,5.973,75,Kwadwo Yeboah,Staff transportation
+8/20/2025,Lowbed,GR 6795-24,TR 01,51,0,0,0,778587,778723,136,2.667,51,John Alanyo,Resettlement Works
+8/21/2025,Toyota Yellow Bus,GN 6323-21,BU 02,84,0,0,0,223821,224113,292,3.476,84,Akwasi Boahen ,Staff transportation
+8/21/2025,Welding Machine,Unknown,WM 01,40,0,0,0,0,0,0,0,40,Prince Essuman,Welding Works
+8/21/2025,Excavator 330GC,Unknown,EX 06,150,6720.1,6737,16.9,0,0,0,0,150,Ibrahim Issaka,Loading of boulder at Rank camp into the trucks
+8/21/2025,Tipper Truck,GT 7846-25,TT 06,100,769.1,786.5,17.4,23098,23481,383,3.83,100,Abraham Arthur,Hauling Materials to Ahafo North  (Newmont)
+8/21/2025,Screen Crusher,Unknown,CP ,40,0,0,0,0,0,0,0,40,Unknown,Unknown
+8/21/2025,Tipper Truck,GT 7769-25,TT 11,101,0,803.5,0,23094,23385,291,2.881,101,Paul Osei,Hauling Materials to Ahafo North  (Newmont)
+8/21/2025,Excavator 336E,Unknown,EX 04,151,15483.7,15488.3,4.6,0,0,0,32.826,151,Ibrahim Issaka,Laydown Works
+8/21/2025,Tipper Truck,GT 7727-25,TT 08,100,757.2,766.4,9.2,23075,23365,290,2.9,100,Abubakar Mohammed ,Hauling Materials to Ahafo North  (Newmont)
+8/21/2025,Tipper Truck,GT 7720-25,TT 10,100,765,774.1,9.1,23093,23382,289,2.89,100,Alhassan Samed,Hauling Materials to Ahafo North  (Newmont)
+8/21/2025,Tipper Truck,GT 7721-25,TT 09,41,729.9,763,33.1,17553,18235,682,16.634,41,Gafaru Achimsa,Hauling Materials to Ahafo North  (Newmont)
+8/21/2025,Toyota Hilux ,GW 4059-20,Unknown,78,0,0,0,237688,237891,203,2.603,78,Dennis Mintah,Used by Manager Minta
+8/22/2025,Tipper Truck,GT 7721-25,TT 09,320,763,763.4,0.4,18235,18235,0,0,320,Gafaru Achimsa,Hauling Materials to Ahafo North  (Newmont)
+8/22/2025,Jaw crusher,Unknown,CP 03,215,0,3810,3810,0,0,0,0.056,215,Braima Dawudu,Breaking down of boulders into smaller parts
+8/22/2025,Tipper Truck,GT 7727-25,TT 08,200,766.4,774,7.6,23365,23568,203,1.015,200,Abubakar Mohammed ,Hauling Materials to Ahafo North  (Newmont)
+8/22/2025,Backhoe Servicing ,Unknown,Unknown,60,0,0,0,0,0,0,0,60,Felix Amuzu/ David Gyamfi,Servicing Works
+8/22/2025,Tipper Truck,GT 7769-25,TT 11,323,803.5,810.9,7.4,23385,23588,203,0.628,323,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+8/22/2025,Nissan Hard body,GT 2757-18,Unknown,52,0,0,0,187212,187640,428,8.231,52,Kwame Brobbey,Used by Manager Samuel
+8/22/2025,Nissan Hard body,GT 2746-18,LV 02,69,0,0,0,213239,213619,380,5.507,69,Samuel Antwi,Used by Eng. Michael Gyamfi
+8/22/2025,Green Hiab,GS 2453-21,TR 04,202,0,0,0,111830.7,111894.2,63.5,3.181,202,Kwame Kra,Resettlement Works
+8/22/2025,Bulldozer,Dozer (D8T),BD 01,461,4754.6,4767,12.4,0,0,0,10.341,461,Baba Musah,Laydown Works
+8/22/2025,Toyota White Pickup,GT 719-20,LV 01,70,0,0,0,240910,241478,568,8.114,70,Samuel Antwi,Staff transportation
+8/22/2025,Excavator 330GC,Unknown,EX 06,223,6737,6738.7,1.7,0,0,0,0,223,Gariba Mohmmed ,Loading of boulder at Rank camp into the trucks
+8/22/2025,Tipper Truck,GT 7855-25,TT 04,273,716.1,751.1,35,21589,22003,414,1.516,273,Duut Fatawu,Hauling Materials to Ahafo North  (Newmont)
+8/22/2025,Block Factory Gen.,Unknown,Unknown,215,1968.4,1981.6,13.2,0,0,0,16.288,215,Ebenezer Agyapong,Laydown Works
+8/22/2025,Tipper Truck,GT 8848-25,TT 12,355,462,478.5,16.5,13584,13944,360,1.014,355,Mohammed Amin Alidu,Hauling Materials to Ahafo North  (Newmont)
+8/22/2025,Tipper Truck,GT 7846-25,TT 06,340,786.5,793.1,6.6,23481,23684,203,0.597,340,Abraham Arthur,Hauling Materials to Ahafo North  (Newmont)
+8/22/2025,Lowbed,GR 6795-24,TR 01,261,0,0,0,778723,778782,59,0.226,261,John Alanyo,Resettlement Works
+8/22/2025,Tipper Truck,GT 7858-25,TT 05,346,723.6,735,11.4,22788,23099,311,0.899,346,Christiana Norvidzro,Laydown Works
+8/22/2025,Excavator 336E,Unknown,EX 04,438,15488.3,15493.5,5.2,0,0,0,84.231,438,Ibrahim Issaka,Unknown
+8/22/2025,Tipper Truck,GT 7720-25,TT 10,249,774.1,781.2,7.1,23382,23585,203,0.815,249,Paul Osei,Laydown Works
+8/22/2025,Water Bowser,GT 7828-25,WB 01,218,190.3,0,190.3,2658,2959,301,1.381,218,Kofi Nyamekye,Suppressing dust/ supplying water to the various place
+8/22/2025,Newmont Dam,Unknown,Unknown,25,0,0,0,0,0,0,0,25,Kofi Nyamekye,Pumping water for the bowser (GT 7828-25)
+8/22/2025,Concrete Mixer,Unknown,20,20,0,0,0,0,0,0,0,20,Unknown,Resettlement Works
+8/22/2025,Concrete Mixer,Unknown,20,20,0,0,0,0,0,0,0,20,Unknown,Resettlement Works
+8/22/2025,Toyota Yellow Bus,GN 6323-21,BU 02,60,0,0,0,224113,224427,314,5.233,60,Haruna Sulemena,Staff transportation
+8/23/2025,Wheel loader 966H,GR 9391-24,LD 02,260,0,18966.4,18966.4,0,0,0,0.014,260,Adamu ,Loading of boulder at Rank camp into the trucks
+8/23/2025,Backhoe JCB,GR 4873-16,BH 01,68,0,0,0,0,0,0,0,68,Abdul Razak ,Laydown Works
+8/23/2025,Welding Machine,Unknown,WM 01,40,0,0,0,0,0,0,0,40,Prince Essuman,Laydown Works
+8/23/2025,Tipper Truck,GE 7013-25,TT- 14,325,0,35.9,35.9,0,1023,1023,3.148,325,Solomon Kuwornu,Hauling Materials to Ahafo North  (Newmont)
+8/23/2025,Tipper Truck,GE 7062-25,TT-17,318,0,33.8,33.8,0,1024,1024,3.22,318,Degraft Johnson ,Hauling Materials to Ahafo North  (Newmont)
+8/23/2025,Tipper Truck,GE 6056-25,TT-15,340,0,32.9,32.9,0,1030,1030,3.029,340,Fatawu Duut,Laydown Works
+8/23/2025,Tipper Truck,GE 6080-25,TT- 16,334,0,36,36,0,1047,1047,3.135,334,Yussif Karim,Laydown Works
+8/23/2025,Toyota White bus,GN 6692-11,BU 01,62,0,0,0,275948,276295,347,5.597,62,Kwadwo Yeboah,Staff transportation
+8/23/2025,Tipper Truck,GT 7721-25,TT 09,253,763.4,778.7,15.3,18235,18750,515,2.036,253,Gafaru Achimsa,Hauling Materials to Ahafo North  (Newmont)
+8/23/2025,Tipper Truck,GT 7858-25,TT 05,295,735,750.5,15.5,23099,23545,446,1.512,295,Sulemena Hamidu,Hauling Materials to Ahafo North  (Newmont)
+8/23/2025,Tipper Truck,GT 7720-25,TT 10,145,781.2,796.7,15.5,23382,23875,493,3.4,145,Ibrahim Abdulai Saaka,Hauling Materials to Ahafo North  (Newmont)
+8/23/2025,Tipper Truck,GT 7727-25,TT 08,250,774,790.9,16.9,23568,24079,511,2.044,250,Abubakar Mohammed ,Hauling Materials to Ahafo North  (Newmont)
+8/23/2025,Tipper Truck,GT 7855-25,TT 04,223,751.1,767.6,16.5,22003,22437,434,1.946,223,Fuesni Adams,Hauling Materials to Ahafo North  (Newmont)
+8/23/2025,Tipper Truck,GT 7846-25,TT 06,254,793.1,810.9,17.8,23684,24124,440,1.732,254,Abraham Arthur,Hauling Materials to Ahafo North  (Newmont)
+8/23/2025,Tipper Truck,GT 7769-25,TT 11,298,810.9,825.3,14.4,23588,23996,408,1.369,298,Paul Osei,Hauling Materials to Ahafo North  (Newmont)
+8/24/2025,Excavator 330GC,Unknown,EX 06,255,6738.7,6753.8,15.1,0,0,0,0,255,Gariba Mohammed,Loading of boulder at Rank camp into the trucks
+8/24/2025,Wheel loader 966H,GR 9391-24,LD 04,281,10003.6,10003.6,0,0,0,0,0,281,Unknown,Unknown
+8/24/2025,Bulldozer,Dozer (D8T),BD 01,245,4767,4774.6,7.6,0,0,0,19.488,245,Baba Musah,Laydown Works
+8/24/2025,Tipper Truck,GT 8848-25,TT 12,250,478.5,495.6,17.1,13944,14392,448,1.792,250,Mohammed Amin Alidu,Hauling Materials to Ahafo North  (Newmont)
+8/24/2025,Tipper Truck,GT 7768-25,TT 07,285,424.5,436.3,11.8,9798,10092,294,1.032,285,Ibrahim Abdul Razak,Hauling Materials to Ahafo North  (Newmont)
+8/24/2025,Tower light,4NX3855,TL 03,40,0,5572,5572,0,0,0,0.007,40,Joseph Mawugbe,Laydown Works
+8/24/2025,Tower light,4NX3850,TL 04,40,6275,6365,90,0,0,0,0.444,40,Joseph Mawugbe,Laydown Works
+8/24/2025,Tipper Truck,GE 7062-25,TT-17,106,33.8,41.1,7.3,1024,1251,227,2.142,106,Degraft Johnson ,Hauling Materials to Ahafo North  (Newmont)
+8/24/2025,Tipper Truck,GE 7013-25,TT- 14,97,35.9,43.3,7.4,1023,1228,205,2.113,97,Solomon Kuwornu,Hauling Materials to Ahafo North  (Newmont)
+8/24/2025,Jaw crusher,Unknown,CP 03,215,3810,3821,11,0,0,0,19.545,215,Braima Dawudu,Breaking down of boulders into smaller parts
+8/25/2025,Welding Machine,Unknown,WM 01,40,0,0,0,0,0,0,0,40,Prince Essuman,Welding Works
+8/25/2025,Excavator 336E,Unknown,EX 04,446,15493.5,15508.3,14.8,0,0,0,30.135,446,Ibrahim Issaka,Laydown Works
+8/25/2025,Wheel loader 966H,GR 9391-24,LD 04,20,0,0,0,0,0,0,0,20,Joseph Mawugbe,Servicing Works
+8/25/2025,Toyota White Pickup,GT 719-20,LV 01,48,0,0,0,241478,241875,397,8.271,48,Samuel Antwi,Staff transportation
+8/25/2025,Toyota Yellow Bus,GN 6323-21,BU 02,76,0,0,0,224427,224862,435,5.724,76,Haruna Sulemena,Staff transportation
+8/25/2025,Toyota Hilux ,GW 4059-20,Unknown,69,0,0,0,237891,238689,798,11.565,69,Kwame Brobbey,Used by Manager Minta
+8/25/2025,Tower light,4NX3850,TL 04,89,6365,6377,12,0,0,0,7.417,89,Joseph Mawugbe,Laydown Works
+8/25/2025,Tower light,4NX3855,TL 03,23,5572,5584,12,0,0,0,1.917,23,Joseph Mawugbe,Laydown Works
+8/25/2025,Wheel loader 966H,GR 9391-24,LD 04,207,10003.6,10003.6,0,0,0,0,0,207,Braima Dawuda,Loading of material into the trucks/ stockpiling of crushed materials 
+8/25/2025,Jaw crusher,Unknown,CP 03,215,3821,3828,7,0,0,0,30.714,215,Braima Dawudu,Breaking down of boulders into smaller parts
+8/25/2025,Tipper Truck,GT 7720-25,TT 10,283,796.7,814.9,18.2,23875,24480,605,2.138,283,Ibrahim Abdulai Saaka,Hauling Materials to Ahafo North  (Newmont)
+8/25/2025,Tipper Truck,GT 7721-25,TT 09,285,778.7,797.1,18.4,18750,19357,607,2.13,285,Gafaru Achimsa,Hauling Materials to Ahafo North  (Newmont)
+8/25/2025,Tipper Truck,GT 7855-25,TT 04,273,767.6,788.4,20.8,22437,22925,488,1.788,273,Alhassan Mohammed ,Hauling Materials to Ahafo North  (Newmont)
+8/25/2025,Tipper Truck,GT 7727-25,TT 08,285,790.9,810.6,19.7,24079,24684,605,2.123,285,Alhassan Samed,Hauling Materials to Ahafo North  (Newmont)
+8/25/2025,Excavator 336E,Unknown,EX 04,280,15508.3,15517.2,8.9,0,0,0,31.461,280,Wadie Eric,Laydown Works

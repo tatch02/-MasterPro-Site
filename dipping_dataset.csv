@@ -1,0 +1,41 @@
+Date,Morning Dip Time,Morning Dip Reading (Liters),Fuel Attendant Name,Security Personnel Name,Evening Dip Time,Evening Dip Reading (Liters),Diesel Issued/Used (Liters),Fuel Attendant Personnel,Security Personnel ,Balance (Liters)
+7/16/2025,8:10:00 AM,54000,Priscilla Opoku,Emmanuel A. Ansah,5:15:00 PM,51128,2872,Priscilla Opoku,Emmanuel A. Ansah,51128
+7/17/2025,8:12:00 AM,51128,Priscilla Opoku,Emmanuel A. Ansah,6:35:00 PM,47725,3403,Priscilla Opoku,Emmanuel A. Ansah,47725
+7/18/2025,7:55:00 AM,47725,Priscilla Opoku,Emmanuel A. Ansah,5:50:00 PM,47264,461,Priscilla Opoku,Emmanuel A. Ansah,47264
+7/19/2025,7:33:00 AM,47264,Priscilla Opoku,Emmanuel A. Ansah,5:55:00 PM,43792,3472,Priscilla Opoku,Emmanuel A. Ansah,43792
+7/20/2025,3:45:00 PM,43792,Priscilla Opoku,Emmanuel A. Ansah,6:00:00 PM,41174,2618,Priscilla Opoku,Emmanuel A. Ansah,41174
+7/21/2025,7:30:00 PM,41174,Priscilla Opoku,Emmanuel A. Ansah,6:00:00 PM,40168,1006,Priscilla Opoku,Emmanuel A. Ansah,40168
+7/22/2025,7:50:00 AM,40168,Hannah Acheampong,Emmanuel A. Ansah,6:12:00 PM,37038,3130,Priscilla Opoku,Emmanuel A. Ansah,37038
+7/23/2025,6:30:00 AM,37038,Fati Abudu,Emmanuel A. Ansah,5:50:00 PM,36630,485,Fati Abudu,Emmanuel A. Ansah,36553
+7/24/2025,8:40:00 AM,36553,Priscilla Opoku,Daniel Oppong,9:00:00 PM,33081,3472,Priscilla Opoku,Daniel Oppong,33081
+7/25/2025,8:59:00 AM,33081,Priscilla Opoku,Daniel Oppong,5:55:00 PM,32125,956,Priscilla Opoku,Daniel Oppong,32125
+7/26/2025,7:49:00 AM,32125,Priscilla Opoku,Daniel Oppong,6:43:00 PM,29187,2938,Priscilla Opoku,Dzomeku,29187
+7/27/2025,8:15:00 AM,29187,Priscilla Opoku,Daniel Oppong,2:50:00 PM,28264,923,Priscilla Opoku,Daniel Oppong,28264
+7/28/2025,5:10:00 AM,28264,Priscilla Opoku,Michael Suglo,5:00:00 PM,25851,2413,Priscilla Opoku,Daniel Oppong,25851
+7/29/2025,7:10:00 AM,25851,Priscilla Opoku,Emmanuel A. Ansah,7:44:00 PM,22473,3378,Priscilla Opoku,Michael Suglo,22473
+7/30/2025,7:32:00 AM,22473,Priscilla Opoku,Emmanuel A. Ansah,5:56:00 PM,22118,355,Priscilla Opoku,Emmanuel A. Ansah,22118
+7/31/2025,6:45:00 AM,22118,Priscilla Opoku,Emmanuel A. Ansah,6:45:00 AM,17669,4449,Priscilla Opoku,Siibu ,17669
+8/1/2025,7:50:00 AM,17669,Priscilla Opoku,Emmanuel A. Ansah,5:56:00 PM,17599,70,Priscilla Opoku,Emmanuel A. Ansah,17599
+8/2/2025,7:50:00 AM,17599,Priscilla Opoku,Emmanuel A. Ansah,6:00:00 PM,17044,555,Priscilla Opoku,Emmanuel A. Ansah,17044
+8/3/2025,,,Priscilla Opoku,Emmanuel A. Ansah,,0,,,Emmanuel A. Ansah,0
+8/4/2025,7:30:00 AM,17044,Priscilla Opoku,Emmanuel A. Ansah,5:35:00 PM,13538,3506,Priscilla Opoku,Emmanuel A. Ansah,13538
+8/5/2025,7:30:00 AM,13538,Priscilla Opoku,Emmanuel A. Ansah,5:43:00 PM,13061,477,Priscilla Opoku,Emmanuel A. Ansah,13061
+8/6/2025,8:00:00 AM,13061,Priscilla Opoku,Emmanuel A. Ansah,5:45:00 PM,10584,2477,Priscilla Opoku,Emmanuel A. Ansah,10584
+8/7/2025,6:50:00 AM,10584,Priscilla Opoku,Emmanuel A. Ansah,5:40:00 PM,9873,711,Priscilla Opoku,Emmanuel A. Ansah,9873
+8/8/2025,7:15:00 AM,9873,Priscilla Opoku,Emmanuel A. Ansah,5:00:00 PM,8578,1295,Priscilla Opoku,Emmanuel A. Ansah,8578
+8/9/2025,7:30:00 AM,8578,Priscilla Opoku,Emmanuel A. Ansah,5:00:00 PM,6449,2129,Priscilla Opoku,Emmanuel A. Ansah,6449
+8/10/2025,8:09:00 AM,6449,Priscilla Opoku,Emmanuel A. Ansah,3:00:00 PM,6408,41,Priscilla Opoku,Emmanuel A. Ansah,6408
+8/11/2025,8:04:00 AM,6408,Priscilla Opoku,Emmanuel A. Ansah,5:59:00 PM,5174,1234,Priscilla Opoku,Emmanuel A. Ansah,5174
+8/12/2025,7:00:00 AM,5174,Priscilla Opoku,Emmanuel A. Ansah,6:00:00 PM,3323,1851,Priscilla Opoku,Emmanuel A. Ansah,3323
+8/13/2025,8:18:00 AM,3323,Priscilla Opoku,Emmanuel A. Ansah,5:00:00 PM,2459,864,Priscilla Opoku,Emmanuel A. Ansah,2459
+8/14/2025,7:00:00 AM,2459,Priscilla Opoku,Emmanuel A. Ansah,5:45:00 PM,1623,836,Priscilla Opoku,Emmanuel A. Ansah,1623
+8/15/2025,7:20:00 AM,1623,Priscilla Opoku,Emmanuel A. Ansah,5:50:00 PM,1472,151,Priscilla Opoku,Emmanuel A. Ansah,1472
+8/16/2025,6:00:00 AM,1472,Priscilla Opoku,Emmanuel A. Ansah,5:00:00 PM,1100,372,Priscilla Opoku,Emmanuel A. Ansah,1100
+8/18/2025,7:50:00 AM,1100,Fati Abudu,Daniel Oppong,5:45:00 PM,371,729,Priscilla Opoku,Daniel Oppong,371
+8/19/2025,7:00:00 AM,371,Priscilla Opoku,Daniel Oppong,5:00:00 PM,156,215,Priscilla Opoku,Emmanuel A. Ansah,156
+8/20/2025,7:45:00 AM,156,Fati Abudu,Emmanuel A. Ansah,5:10:00 PM,105,51,Priscilla Opoku,Emmanuel A. Ansah,105
+8/21/2025,7:30:00 AM,1207,Priscilla Opoku,Emmanuel A. Ansah,7:20:00 PM,54222,985,Priscilla Opoku,Emmanuel A. Ansah,54222
+8/22/2025,6:00:00 AM,54222,Priscilla Opoku,Emmanuel A. Ansah,5:00:00 PM,49207,5015,Priscilla Opoku,Emmanuel A. Ansah,49207
+8/23/2025,8:00:00 AM,49207,Priscilla Opoku,Emmanuel A. Ansah,6:30:00 PM,45742,3465,Priscilla Opoku,Emmanuel A. Ansah,45742
+8/24/2025,6:48:00 AM,45900,Fati Abudu,Emmanuel A. Ansah,6:00:00 PM,44200,1814,Fati Abudu,Emmanuel A. Ansah,44086
+8/25/2025,7:34:00 AM,44200,Priscilla Opoku,Emmanuel A. Ansah,7:54:00 PM,41600,2639,Fati Abudu,Emmanuel A. Ansah,41561
