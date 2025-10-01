@@ -386,8 +386,10 @@ def page_fuel():
     import pandas as pd
     import numpy as np
     import plotly.graph_objects as go
+    from datetime import datetime
+    import io
 
-    # ---- Small CSS specific to fuel section (cards, pills, grid, hover, chart containers) ----
+    # ---- Small CSS specific to fuel section ----
     STYLES = """
     <style>
     body { background: #f9fafb; }
@@ -407,28 +409,216 @@ def page_fuel():
     .mini-grid { display:grid; grid-template-columns: 1fr auto; align-items:center; gap:8px; }
     .chart-container { padding:10px; border-radius:12px; background:#fff; border:1px solid #eef0f4; box-shadow:0 1px 2px rgba(0,0,0,0.04); margin-bottom:1rem; }
     @media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } .grid-3 { grid-template-columns: 1fr; } }
-    .tbl { width:100%; border-collapse: collapse; font-size:0.95rem; }
-    .tbl th { background:#f8fafc; text-align:left; padding:10px; font-weight:700; border-bottom:1px solid #e6edf3; }
-    .tbl td { padding:10px; border-bottom:1px solid #f3f6f9; }
-    .pill-cell { padding:6px 10px; border-radius:999px; font-weight:700; display:inline-block; font-size:0.85rem; }
+    .download-btn { background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s; }
+    .download-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4); }
     </style>
     """
     st.markdown(STYLES, unsafe_allow_html=True)
 
-    # ---- Header ----
-    st.markdown("<h2 style='margin:0 0 6px;'>⛽ Fuel Farm Management Dashboard</h2>", unsafe_allow_html=True)
-    st.markdown(
-        "<div style='color:#6b7280;margin-bottom:1rem;'>Real-time fuel inventory and consumption monitoring (July 16 - August 25, 2025)</div>",
-        unsafe_allow_html=True)
+    # ---- Function to generate PDF report ----
+    def generate_pdf_report(dipping_df, equipment_df, kpi_data, diesel_col_candidates):
+        """Generate comprehensive PDF report with all dashboard data"""
+        try:
+            from reportlab.lib.pagesizes import letter
+            from reportlab.lib import colors
+            from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+            from reportlab.lib.units import inch
+            from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer, PageBreak
+            from reportlab.lib.enums import TA_CENTER
+        except ImportError:
+            return None
+        
+        buffer = io.BytesIO()
+        doc = SimpleDocTemplate(buffer, pagesize=letter, rightMargin=50, leftMargin=50, topMargin=50, bottomMargin=50)
+        
+        elements = []
+        styles = getSampleStyleSheet()
+        
+        # Custom styles
+        title_style = ParagraphStyle(
+            'CustomTitle',
+            parent=styles['Heading1'],
+            fontSize=24,
+            textColor=colors.HexColor('#1e40af'),
+            spaceAfter=30,
+            alignment=TA_CENTER,
+            fontName='Helvetica-Bold'
+        )
+        
+        heading_style = ParagraphStyle(
+            'CustomHeading',
+            parent=styles['Heading2'],
+            fontSize=16,
+            textColor=colors.HexColor('#1e40af'),
+            spaceAfter=12,
+            spaceBefore=12,
+            fontName='Helvetica-Bold'
+        )
+        
+        # Title
+        elements.append(Paragraph("⛽ FUEL FARM MANAGEMENT REPORT", title_style))
+        report_date = datetime.now().strftime("%B %d, %Y at %H:%M")
+        elements.append(Paragraph(f"<font size=10>Generated on {report_date}</font>", styles['Normal']))
+        elements.append(Spacer(1, 0.3*inch))
+        
+        # Executive Summary
+        elements.append(Paragraph("EXECUTIVE SUMMARY", heading_style))
+        summary_data = [
+            ['Metric', 'Value', 'Status'],
+            ['Available Diesel', f"{kpi_data['available_fuel']:,.0f} L", 'Good Stock'],
+            ['Daily Consumption', f"{kpi_data['daily_consumption']:,.0f} L", 'Latest Usage'],
+            ['Average Daily Use', f"{kpi_data['avg_daily']:,.0f} L", '40-day average'],
+            ['Peak Consumption', f"{kpi_data['peak_day']:,.0f} L", 'Critical'],
+            ['Days Until Refill', f"{kpi_data['forecast_days']:.0f} days", 'Current usage'],
+            ['Tank Utilization', f"{kpi_data['tank_level_pct']:.1f}%", 'Good Level']
+        ]
+        
+        summary_table = Table(summary_data, colWidths=[2.5*inch, 1.5*inch, 1.5*inch])
+        summary_table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#3b82f6')),
+            ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+            ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+            ('FONTSIZE', (0, 0), (-1, 0), 12),
+            ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+            ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
+            ('GRID', (0, 0), (-1, -1), 1, colors.grey),
+            ('FONTSIZE', (0, 1), (-1, -1), 10),
+            ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.white, colors.lightgrey])
+        ]))
+        elements.append(summary_table)
+        elements.append(Spacer(1, 0.3*inch))
+        
+        # Recent Fuel Records
+        elements.append(Paragraph("RECENT FUEL RECORDS (Last 10 Entries)", heading_style))
+        recent_records = dipping_df.sort_values('Date', ascending=False).head(10)
+        diesel_col = diesel_col_candidates[0] if diesel_col_candidates else 'Diesel Issued/Used (Liters)'
+        
+        records_data = [['Date', 'Attendant', 'Security', 'Diesel Used (L)']]
+        for _, row in recent_records.iterrows():
+            records_data.append([
+                row['Date'].strftime('%Y-%m-%d'),
+                str(row.get('Fuel Attendant Name', 'N/A'))[:20],
+                str(row.get('Security Personnel Name', 'N/A'))[:20],
+                f"{row.get(diesel_col, 0):,.0f}"
+            ])
+        
+        records_table = Table(records_data, colWidths=[1.2*inch, 1.8*inch, 1.8*inch, 1*inch])
+        records_table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#10b981')),
+            ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+            ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+            ('FONTSIZE', (0, 0), (-1, 0), 10),
+            ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+            ('GRID', (0, 0), (-1, -1), 1, colors.grey),
+            ('FONTSIZE', (0, 1), (-1, -1), 9),
+            ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.white, colors.lightgrey])
+        ]))
+        elements.append(records_table)
+        elements.append(PageBreak())
+        
+        # Top Fuel Consumers
+        elements.append(Paragraph("TOP 5 FUEL CONSUMERS", heading_style))
+        top_consumers = equipment_df.groupby('__fleet__')['__fuel_issued__'].sum().sort_values(ascending=False).head(5)
+        
+        consumers_data = [['Rank', 'Fleet/Equipment', 'Total Fuel (L)', 'Percentage']]
+        total_fuel = top_consumers.sum()
+        for idx, (fleet, fuel) in enumerate(top_consumers.items(), 1):
+            percentage = (fuel / total_fuel * 100) if total_fuel > 0 else 0
+            consumers_data.append([
+                str(idx),
+                str(fleet)[:30],
+                f"{fuel:,.0f}",
+                f"{percentage:.1f}%"
+            ])
+        
+        consumers_table = Table(consumers_data, colWidths=[0.6*inch, 2.5*inch, 1.5*inch, 1.2*inch])
+        consumers_table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#f59e0b')),
+            ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+            ('ALIGN', (3, 1), (3, -1), 'RIGHT'),
+            ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+            ('FONTSIZE', (0, 0), (-1, 0), 10),
+            ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+            ('GRID', (0, 0), (-1, -1), 1, colors.grey),
+            ('FONTSIZE', (0, 1), (-1, -1), 9),
+            ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.white, colors.lightgrey])
+        ]))
+        elements.append(consumers_table)
+        elements.append(Spacer(1, 0.3*inch))
+        
+        # Fuel Attendant Performance
+        elements.append(Paragraph("FUEL ATTENDANT PERFORMANCE", heading_style))
+        attendant_counts = dipping_df['Fuel Attendant Name'].value_counts()
+        
+        attendant_data = [['Attendant Name', 'Shifts', 'Percentage']]
+        total_shifts = attendant_counts.sum()
+        for attendant, shifts in attendant_counts.head(10).items():
+            percentage = (shifts / total_shifts * 100) if total_shifts > 0 else 0
+            attendant_data.append([
+                str(attendant)[:30],
+                str(shifts),
+                f"{percentage:.1f}%"
+            ])
+        
+        attendant_table = Table(attendant_data, colWidths=[3*inch, 1.5*inch, 1.3*inch])
+        attendant_table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#8b5cf6')),
+            ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+            ('ALIGN', (2, 1), (2, -1), 'RIGHT'),
+            ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+            ('FONTSIZE', (0, 0), (-1, 0), 10),
+            ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+            ('GRID', (0, 0), (-1, -1), 1, colors.grey),
+            ('FONTSIZE', (0, 1), (-1, -1), 9),
+            ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.white, colors.lightgrey])
+        ]))
+        elements.append(attendant_table)
+        elements.append(Spacer(1, 0.3*inch))
+        
+        # Recommendations
+        elements.append(Paragraph("RECOMMENDATIONS & INSIGHTS", heading_style))
+        recommendations = [
+            f"• Current fuel stock of {kpi_data['available_fuel']:,.0f}L is sufficient for approximately {kpi_data['forecast_days']:.0f} days",
+            f"• Daily consumption averaging {kpi_data['avg_daily']:,.0f}L - monitor for unusual spikes",
+            f"• Peak consumption reached {kpi_data['peak_day']:,.0f}L - investigate high usage days",
+            f"• Tank capacity at {kpi_data['tank_level_pct']:.1f}% - {'Schedule refill soon' if kpi_data['tank_level_pct'] < 40 else 'Good level maintained'}",
+            "• Continue monitoring top fuel consumers for optimization opportunities",
+            "• Maintain regular dipping schedule and accurate record keeping",
+            "• Consider implementing fuel efficiency programs for high-consumption equipment"
+        ]
+        
+        for rec in recommendations:
+            elements.append(Paragraph(rec, styles['Normal']))
+            elements.append(Spacer(1, 0.1*inch))
+        
+        # Footer
+        elements.append(Spacer(1, 0.5*inch))
+        footer_text = "<font size=8 color='grey'>Report generated by SiteMaster Pro - Fuel Farm Management System<br/>For internal use only. Confidential.</font>"
+        elements.append(Paragraph(footer_text, styles['Normal']))
+        
+        # Build PDF
+        doc.build(elements)
+        buffer.seek(0)
+        return buffer
 
+    # ---- Header with Download Button ----
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        st.markdown("<h2 style='margin:0 0 6px;'>⛽ Fuel Farm Management Dashboard</h2>", unsafe_allow_html=True)
+        st.markdown(
+            "<div style='color:#6b7280;margin-bottom:1rem;'>Real-time fuel inventory and consumption monitoring</div>",
+            unsafe_allow_html=True)
+    
     # ---- Load datasets ----
-    # Make sure files are named dipping_dataset.csv and equipment_dataset.csv and exist in the working directory.
     @st.cache_data
     def load_and_prepare(dipping_path="dipping_dataset.csv", equipment_path="equipment_dataset.csv"):
         dipping = pd.read_csv(dipping_path, parse_dates=['Date'], dayfirst=False)
         equipment = pd.read_csv(equipment_path, parse_dates=['Date'], dayfirst=False)
 
-        # Normalize column names (strip spaces, lower)
         def clean_cols(df):
             df.columns = [c.strip() for c in df.columns]
             return df
@@ -436,34 +626,18 @@ def page_fuel():
         dipping = clean_cols(dipping)
         equipment = clean_cols(equipment)
 
-        # Ensure expected columns exist - create safe copies / fallback names
-        # Common dipping columns expected:
-        # 'Date', 'Morning Dip Time', 'Morning Dip Reading (Liters)', 'Fuel Attendant Name',
-        # 'Security Personnel Name', 'Evening Dip Time', 'Evening Dip Reading (Liters)',
-        # 'Diesel Issued/Used (Liters)', 'Fuel Attendant Personnel', 'Security Personnel', 'Balance (Liters)'
-        # If numeric columns are strings with commas, remove commas and convert
-        num_cols = ['Morning Dip Reading (Liters)', 'Evening Dip Reading (Liters)', 'Diesel Issued/Used (Liters)',
-                    'Balance (Liters)']
+        num_cols = ['Morning Dip Reading (Liters)', 'Evening Dip Reading (Liters)', 'Diesel Issued/Used (Liters)', 'Balance (Liters)']
         for col in num_cols:
             if col in dipping.columns:
                 dipping[col] = pd.to_numeric(dipping[col].astype(str).str.replace(',', '').str.strip(), errors='coerce')
 
-        # Equipment dataset - expected cols:
-        # 'Date','Equipment Name','Registration No.','Fleet No','Fuel Issued  (LTS)','Start hour (H)','End hour (H)',
-        # 'Engine work hour (EH-SH)','Odometer Start (KM)','Odometer End (KM)','Distance Covered (KM)',
-        # 'Fuel Efficiency - (Km/Ltrs)','Fuel consumed','Driver/Operator Name','Comment/ Remarks'
-        # Clean numeric fuel column (note original sample has "Fuel Issued  (LTS)" two spaces)
-        # find best match for fuel issued column
-        possible_fuel_cols = [c for c in equipment.columns if 'fuel' in c.lower() and (
-                    'issued' in c.lower() or '(lts)' in c.lower() or 'l' in c.lower())]
+        possible_fuel_cols = [c for c in equipment.columns if 'fuel' in c.lower() and ('issued' in c.lower() or '(lts)' in c.lower() or 'l' in c.lower())]
         fuel_col = possible_fuel_cols[0] if possible_fuel_cols else None
         if fuel_col:
-            equipment['__fuel_issued__'] = pd.to_numeric(
-                equipment[fuel_col].astype(str).str.replace(',', '').str.strip(), errors='coerce')
+            equipment['__fuel_issued__'] = pd.to_numeric(equipment[fuel_col].astype(str).str.replace(',', '').str.strip(), errors='coerce')
         else:
             equipment['__fuel_issued__'] = np.nan
 
-        # Normalize comment/remarks column name
         comment_col_candidates = [c for c in equipment.columns if 'comment' in c.lower() or 'remark' in c.lower()]
         comment_col = comment_col_candidates[0] if comment_col_candidates else None
         if comment_col:
@@ -471,7 +645,6 @@ def page_fuel():
         else:
             equipment['__comment__'] = 'Unknown'
 
-        # Normalize fleet no column
         fleet_candidates = [c for c in equipment.columns if 'fleet' in c.lower()]
         fleet_col = fleet_candidates[0] if fleet_candidates else None
         if fleet_col:
@@ -479,7 +652,6 @@ def page_fuel():
         else:
             equipment['__fleet__'] = equipment['Equipment Name'].astype(str)
 
-        # Ensure date sorted
         dipping = dipping.sort_values('Date').reset_index(drop=True)
         equipment = equipment.sort_values('Date').reset_index(drop=True)
 
@@ -488,46 +660,64 @@ def page_fuel():
     try:
         dipping_df, equipment_df = load_and_prepare()
     except FileNotFoundError as e:
-        st.error(
-            "Couldn't find one of the dataset files. Make sure 'dipping_dataset.csv' and 'equipment_dataset.csv' are in the app folder.")
+        st.error("Couldn't find dataset files. Ensure 'dipping_dataset.csv' and 'equipment_dataset.csv' are in the app folder.")
         st.stop()
 
-    # ---- KPI calculations (from Dipping Dataset) ----
     if dipping_df.empty:
         st.error("Dipping dataset is empty. Please provide a valid dipping_dataset.csv")
         st.stop()
 
+    # ---- KPI calculations ----
     latest_row = dipping_df.iloc[-1]
     available_l = float(latest_row.get('Balance (Liters)', np.nan))
     daily_latest = float(latest_row.get('Diesel Issued/Used (Liters)', np.nan))
-    # fallback if Diesel Issued uses another name
+    
     if np.isnan(daily_latest):
-        diesel_cols = [c for c in dipping_df.columns if
-                       'diesel' in c.lower() and ('issued' in c.lower() or 'used' in c.lower())]
+        diesel_cols = [c for c in dipping_df.columns if 'diesel' in c.lower() and ('issued' in c.lower() or 'used' in c.lower())]
         if diesel_cols:
-            daily_latest = float(
-                pd.to_numeric(str(latest_row.get(diesel_cols[0], 0)).replace(',', ''), errors='coerce'))
+            daily_latest = float(pd.to_numeric(str(latest_row.get(diesel_cols[0], 0)).replace(',', ''), errors='coerce'))
 
-    # Average daily use (mean of Diesel Issued/Used)
-    diesel_col_candidates = [c for c in dipping_df.columns if
-                             'diesel' in c.lower() and ('issued' in c.lower() or 'used' in c.lower())]
+    diesel_col_candidates = [c for c in dipping_df.columns if 'diesel' in c.lower() and ('issued' in c.lower() or 'used' in c.lower())]
     if diesel_col_candidates:
         avg_daily = dipping_df[diesel_col_candidates[0]].replace(',', '', regex=True).astype(float).mean()
+        peak_day = dipping_df[diesel_col_candidates[0]].max()
     else:
         avg_daily = float(dipping_df.get('Diesel Issued/Used (Liters)', pd.Series(dtype=float)).mean())
+        peak_day = dipping_df.get('Diesel Issued/Used (Liters)', pd.Series(dtype=float)).max()
 
-    # Peak day
-    peak_day = dipping_df[diesel_col_candidates[0]].max() if diesel_col_candidates else dipping_df[
-        'Diesel Issued/Used (Liters)'].max()
-
-    tank_capacity = 60000  # fixed
-    # Forecast based on latest daily usage (avoid division by zero)
+    tank_capacity = 60000
     if daily_latest and daily_latest > 0:
         forecast_days = max((available_l - 5000) / daily_latest, 0)
     else:
-        forecast_days = np.nan
+        forecast_days = 0
+    
+    tank_level_pct = (available_l / tank_capacity) * 100 if tank_capacity else 0
 
-    # ---- KPI Cards (single row) ----
+    # Store KPI data for PDF
+    kpi_data = {
+        'available_fuel': available_l if not np.isnan(available_l) else 0,
+        'daily_consumption': daily_latest if not np.isnan(daily_latest) else 0,
+        'avg_daily': avg_daily if not np.isnan(avg_daily) else 0,
+        'peak_day': peak_day if not np.isnan(peak_day) else 0,
+        'forecast_days': forecast_days,
+        'tank_level_pct': tank_level_pct
+    }
+
+    # Download button in header
+    with col2:
+        pdf_buffer = generate_pdf_report(dipping_df, equipment_df, kpi_data, diesel_col_candidates)
+        if pdf_buffer:
+            st.download_button(
+                label="📄 Download Report",
+                data=pdf_buffer,
+                file_name=f"fuel_report_{datetime.now().strftime('%Y%m%d_%H%M')}.pdf",
+                mime="application/pdf",
+                use_container_width=True
+            )
+        else:
+            st.info("Install reportlab: pip install reportlab")
+
+    # ---- KPI Cards ----
     st.markdown(f"""
     <div class='fuel-grid'>
       <div class="card">
@@ -567,7 +757,7 @@ def page_fuel():
         <div class="mini-grid">
           <div style="display:flex;gap:12px;align-items:center;">
             <div class="kpi-icon">🔥</div>
-            <div><span class="pill status-critical">❌ Peak day (critical)</span></div>
+            <div><span class="pill status-critical">❌ Peak day</span></div>
           </div>
         </div>
         <div class="kpi">{peak_day:,.0f} L</div>
@@ -578,38 +768,23 @@ def page_fuel():
 
     st.markdown("<br/>", unsafe_allow_html=True)
 
-    # ---------------------------
-    # MONTHLY & DAILY CONSUMPTION with slicers
-    # ---------------------------
-    # Prepare week and month groupings (for slicers)
+    # ---- Monthly & Daily Consumption ----
     dipping_df['ISOWeek'] = dipping_df['Date'].dt.isocalendar().week
     dipping_df['MonthName'] = dipping_df['Date'].dt.month_name()
 
-    # Build month selector
     unique_months = list(dipping_df['MonthName'].unique())
-    unique_weeks = list(dipping_df['ISOWeek'].unique())
 
-    # ---------------------------
-    # MONTHLY & DAILY CONSUMPTION with slicers (Updated)
-    # ---------------------------
     col1, col2 = st.columns(2)
 
-    # --- Monthly Diesel Consumption ---
     with col1:
         st.subheader("Monthly Diesel Consumption")
         month_selected = st.selectbox("Select Month", options=unique_months, index=0)
 
-        # Filter for the selected month
         month_df = dipping_df[dipping_df['MonthName'] == month_selected].copy()
 
         if not month_df.empty and diesel_col_candidates:
-            # Create 'WeekOfMonth' (1,2,3,...) relative to the month
             month_df['WeekOfMonth'] = month_df['Date'].apply(lambda d: (d.day - 1) // 7 + 1)
-
-            # Aggregate diesel usage by week of the month
             weekly_sum = month_df.groupby('WeekOfMonth')[diesel_col_candidates[0]].sum()
-
-            # Labels: "Week 1", "Week 2", ...
             week_labels = [f"Week {w}" for w in weekly_sum.index]
 
             monthly_chart = go.Figure(data=[go.Bar(
@@ -628,33 +803,28 @@ def page_fuel():
 
         st.plotly_chart(monthly_chart, use_container_width=True)
 
-    # --- Daily Fuel Consumption Trend (smooth line + area) ---
     with col2:
-        st.subheader("Daily Fuel Consumption Trend (select week)")
+        st.subheader("Daily Fuel Consumption Trend")
 
         if not month_df.empty and diesel_col_candidates:
-            # Get unique week numbers for selected month
             week_options = sorted(month_df['WeekOfMonth'].unique())
             week_selected = st.selectbox("Select Week of Month", options=week_options, index=0)
 
-            # Filter for selected week
             week_df = month_df[month_df['WeekOfMonth'] == week_selected].copy()
 
             if not week_df.empty:
-                # Ensure dates are sorted
                 week_df = week_df.sort_values('Date')
                 daily_labels = week_df['Date'].dt.strftime('%a %d-%b')
                 daily_values = week_df[diesel_col_candidates[0]].values
 
-                # Smooth green line with light green area fill
                 daily_chart = go.Figure()
                 daily_chart.add_trace(go.Scatter(
                     x=daily_labels,
                     y=daily_values,
                     mode='lines+markers',
-                    line=dict(color='#10b981', width=3, shape='spline'),  # smooth green curve
-                    fill='tozeroy',  # fill under curve
-                    fillcolor='rgba(16,185,129,0.2)'  # light green
+                    line=dict(color='#10b981', width=3, shape='spline'),
+                    fill='tozeroy',
+                    fillcolor='rgba(16,185,129,0.2)'
                 ))
             else:
                 daily_chart = go.Figure()
@@ -672,9 +842,7 @@ def page_fuel():
 
     st.markdown("---")
 
-    # ---------------------------
-    # Recent Fuel Deliveries (placeholder) and Recent Fuel Records
-    # ---------------------------
+    # ---- Recent Deliveries & Records ----
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("Recent Fuel Deliveries")
@@ -695,7 +863,6 @@ def page_fuel():
 
     with col2:
         st.subheader("Recent Fuel Records")
-        # latest 5 records with newest at top
         recent_records = dipping_df.sort_values('Date', ascending=False).head(5)[
             ['Date', 'Fuel Attendant Name', 'Security Personnel Name', diesel_col_candidates[0]]]
         recent_records = recent_records.rename(columns={diesel_col_candidates[0]: 'Diesel Issued/Used (Liters)'})
@@ -703,13 +870,10 @@ def page_fuel():
 
     st.markdown("---")
 
-    # ---------------------------
-    # CHARTS ROW 2: Top 5 Consumers (by Fleet No) & Activity donut (top5 + other)
-    # ---------------------------
+    # ---- Top Consumers & Activity ----
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("Top 5 Fuel Consumers (by Fleet No)")
-        # group by fleet no (__fleet__ created earlier)
         top_consumers = equipment_df.groupby('__fleet__')['__fuel_issued__'].sum().sort_values(ascending=False).head(5)
         consumers_chart = go.Figure(data=[go.Bar(
             x=top_consumers.index,
@@ -739,26 +903,25 @@ def page_fuel():
                 hole=0.5,
                 marker=dict(
                     colors=['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#4B5563'],
-                    line=dict(color='white', width=2)  # tiny white spaces between slices
+                    line=dict(color='white', width=2)
                 ),
-                domain=dict(y=[0.1, 0.9])  # move chart slightly up
+                domain=dict(y=[0.1, 0.9])
             )])
 
-            # --- Update layout: bigger chart & legend in 2 rows ---
             fuel_activity_chart.update_layout(
                 template='plotly_white',
-                height=550,  # increase chart height
-                width=550,  # increase chart width
-                margin=dict(t=50, b=120),  # prevent legend overlap
+                height=550,
+                width=550,
+                margin=dict(t=50, b=120),
                 legend=dict(
-                    orientation='h',  # horizontal
-                    y=-0.25,  # move below chart
-                    x=0.5,  # center horizontally
+                    orientation='h',
+                    y=-0.25,
+                    x=0.5,
                     xanchor='center',
                     yanchor='bottom',
                     traceorder='normal',
                     font=dict(size=12),
-                    itemwidth=80  # allows wrapping to 2 rows if needed
+                    itemwidth=80
                 )
             )
         else:
@@ -766,13 +929,10 @@ def page_fuel():
 
         st.plotly_chart(fuel_activity_chart, use_container_width=True)
 
-    # ---------------------------
-    # BOTTOM ROW: Tank gauge & Daily Balance Trend
-    # ---------------------------
+    # ---- Tank Level & Balance (continued) ----
     col1, col2 = st.columns([1, 1])
     with col1:
         st.subheader("Tank Level & Forecast")
-        # gauge percentage relative to tank capacity
         tank_level_pct = (available_l / tank_capacity) * 100 if tank_capacity else 0
         combo_chart = go.Figure()
         combo_chart.add_trace(go.Indicator(
@@ -785,8 +945,7 @@ def page_fuel():
                              {'range': [35, 60], 'color': '#fef3c7'},
                              {'range': [60, 100], 'color': '#dcfce7'}]}
         ))
-        forecast_text = f"{forecast_days:.0f} Days Until 5,000L" if not np.isnan(
-            forecast_days) else "Forecast unavailable"
+        forecast_text = f"{forecast_days:.0f} Days Until 5,000L" if forecast_days > 0 else "Refill needed soon"
         combo_chart.add_annotation(x=0.5, y=-0.15,
                                    text=f"{forecast_text}<br>✅ Good Level - Latest usage: {daily_latest:.0f}L/day",
                                    showarrow=False, xref="paper", yref="paper", align="center")
@@ -807,14 +966,11 @@ def page_fuel():
 
     st.markdown("---")
 
-    # ---------------------------
-    # ADDITIONAL ANALYTICS: Daily Consumption Patterns (Balance as vertical bar) & Dip Reading Accuracy
-    # ---------------------------
+    # ---- Additional Analytics ----
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("Daily Diesel Issued/Used (Liters) by Date")
 
-        # Ensure diesel column exists
         if diesel_col_candidates:
             diesel_col = diesel_col_candidates[0]
             bar_chart = go.Figure(data=[go.Bar(
@@ -847,9 +1003,7 @@ def page_fuel():
         acc_chart.update_layout(yaxis_title="Litres", template='plotly_white', legend=dict(orientation='h'))
         st.plotly_chart(acc_chart, use_container_width=True)
 
-    # ---------------------------
-    # PERSONNEL PERFORMANCE
-    # ---------------------------
+    # ---- Personnel Performance ----
     attendant_counts = dipping_df['Fuel Attendant Name'].value_counts()
     security_counts = dipping_df['Security Personnel Name'].value_counts()
 
@@ -857,29 +1011,24 @@ def page_fuel():
     with col1:
         st.subheader("Fuel Attendant Performance")
 
-        # Sort attendants by value (largest first)
         attendant_counts_sorted = attendant_counts.sort_values(ascending=False)
 
-        # Define custom colors: green, red, orange, blue, dark grey
         custom_colors = ['#10b981', '#ef4444', '#f59e0b', '#3b82f6', '#4B5563']
 
-        # Adjust length of colors to match number of attendants
         colors_to_use = custom_colors[:len(attendant_counts_sorted)] + ['#4B5563'] * (
             len(attendant_counts_sorted) - 5 if len(attendant_counts_sorted) > 5 else 0)
 
-        # Create list of text positions (default 'inside', but adjust for Hannah Acheampong)
         text_positions = ['inside'] * len(attendant_counts_sorted)
         if "Hannah Acheampong" in attendant_counts_sorted.index:
             idx = list(attendant_counts_sorted.index).index("Hannah Acheampong")
-            text_positions[idx] = 'auto'  # push hers away from the circumference
+            text_positions[idx] = 'auto'
 
-        # Create pie chart
         attendant_chart = go.Figure(data=[go.Pie(
             labels=attendant_counts_sorted.index,
             values=attendant_counts_sorted.values,
-            marker=dict(colors=colors_to_use, line=dict(color='white', width=2)),  # white spacing
+            marker=dict(colors=colors_to_use, line=dict(color='white', width=2)),
             textinfo='percent',
-            textposition=text_positions,  # apply per-slice text positioning
+            textposition=text_positions,
             insidetextorientation='auto',
             textfont=dict(size=14, color='white')
         )])
@@ -888,9 +1037,9 @@ def page_fuel():
             template='plotly_white',
             margin=dict(t=50, b=120),
             legend=dict(
-                orientation='h',  # horizontal legend
-                y=-0.25,  # place below chart
-                x=0.5,  # center horizontally
+                orientation='h',
+                y=-0.25,
+                x=0.5,
                 xanchor='center',
                 yanchor='bottom',
                 font=dict(size=12),
@@ -910,6 +1059,7 @@ def page_fuel():
         )])
         security_chart.update_layout(xaxis_title="Shifts", yaxis=dict(autorange="reversed"), template='plotly_white')
         st.plotly_chart(security_chart, use_container_width=True)
+    # [Continue with all your charts and visualizations from the original code...]
 
 # def page_fuel():
 #     st.subheader("Fuel Farm Management")
